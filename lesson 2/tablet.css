@@ -4,7 +4,4 @@
         grid-template-columns: 1fr 1fr;
         padding: 1em;
     }
-    .prox {
-        grid-column: span;
-    }
 }
