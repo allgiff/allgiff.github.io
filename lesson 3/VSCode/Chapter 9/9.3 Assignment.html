@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>9.3 Assignment</title>
+    <script>
+        /* Defining Table
+         * Input: User input of loan information, such as interest rate and payments per year. 
+         * Processing: Use provided formulas, formatted to java to compute monthly payment and balance for a loan with a fixed annual rate.
+         * Output: call functions and output payment ad balance to the output div.
+         * Author: Allie Gifford
+         */
+        function doPayment() {
+            // Get data from the html imput text field
+            let amtBorrow = parseFloat(document.getElementById('amtBorrowTxt').value)
+            let annRate = parseFloat(document.getElementById('annRateTxt').value);
+            let numYrs = parseFloat(document.getElementById('numYrsTxt').value);
+            let periodsPerYr = parseFloat(document.getElementById('periodsPerYrTxt').value);
+
+            //call compute payment function.
+            let result = computePayment(amtBorrow, annRate, numYrs, periodsPerYr);
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDivPay').innerHTML = result;
+
+        } 
+        function doBalance() {
+            // Get data from the html imput text field
+            let amtBorrow = parseFloat(document.getElementById('amtBorrowTxt').value)
+            let annRate = parseFloat(document.getElementById('annRateTxt').value);
+            let numYrs = parseFloat(document.getElementById('numYrsTxt').value);
+            let periodsPerYr = parseFloat(document.getElementById('periodsPerYrTxt').value);
+            let paidToDate = parseFloat(document.getElementById('paidToDateTxt').value);
+
+
+            //call compute balance function.
+            let final = computeBalance(amtBorrow, annRate, numYrs, periodsPerYr, paidToDate);
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDivBal').innerHTML = final;
+
+        }
+        //compute and return monthly payment for loan with fixed annual rate
+        function computePayment(amtBorrow, annRate, numYrs, periodsPerYr) {
+           
+            //set variables 
+            let a = amtBorrow;
+            let r = (annRate / periodsPerYr);
+            let n = (numYrs * periodsPerYr) * -1;
+
+            // calculate monthly payment for a loan with a fixed annual interest
+            let p = (a * r) / (1 - (Math.pow(1 + r), n));
+            p = Math.round(p * 100) / 100;
+            return p;
+
+        }
+        //compute and return balance for a loan with fixed anual rate.
+        function computeBalance(amtBorrow, annRate, numYrs, periodsPerYr, paidToDate) {
+
+            //call compute payment function.
+            let p = computePayment(amtBorrow, annRate, numYrs, periodsPerYr);
+            let a = amtBorrow;
+            let r = (annRate / periodsPerYr);
+            let d = paidToDate;
+
+            // calculate balance for a loan with a fixed annual interest rate.
+            let b = (a * (Math.pow((1 + r), d))) - (p * (Math.pow((1 + r), d) - 1)) / r;
+            b = Math.round(b * 100) / 100;
+            return b;
+
+        }
+    </script>
+</head>
+
+<body>
+    Amount borrowed (principal): <input type="text" id="amtBorrowTxt"> <br>
+    Annual interest rate (example: .065): <input type="text" id="annRateTxt"> <br>
+    Number of Years: <input type="text" id="numYrsTxt"> <br>
+    Payments per year: <input type="text" id="periodsPerYrTxt"> <br>
+    <button type="button" onclick="doPayment()">Compute Payment</button> <br>
+    <div id="outputDivPay"></div> <br>
+   
+    Number of payments paid to date: <input type="text" id="paidToDateTxt"> <br>
+    <button type="button" onclick="doBalance()">Compute Payoff Amount</button> <br>
+     <div id="outputDivBal"></div>
+</body>
+
+</html>
