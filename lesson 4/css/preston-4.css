@@ -1,19 +1,22 @@
 html {
-    max-width: 1040px;
     margin: 0 auto;
     background-color: #EBF5FE;
     font-family: "Quicksand", sans-serif;
 }
 
 /* css for header - logo, name, motto */
+#pancake {
+  text-align: center;
+  background-color: #fccf4d;
+  padding: 15px;
+  font-weight: 600;
+  width: 100%;
+}
 header {
     padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#pancakes {
-    
 }
 #sky-logo{
     width: 80px;
@@ -58,7 +61,6 @@ nav {
     text-align: left;
     text-decoration: none;
     color: black;
-    font-weight: bold;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
@@ -71,7 +73,14 @@ nav {
 #navigation.responsive li {
     display: block;
 }
-
+/* css for other content */
+.content {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 400;
+}
 .contentbox {
   text-align: left;
   background-color: white;
@@ -80,7 +89,7 @@ nav {
   border-color: #444545;
   border-style: solid;
 }
-
+/* css for footer */
 footer {    
     background-color: #034078;
     color: white;
