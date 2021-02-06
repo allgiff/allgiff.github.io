@@ -55,6 +55,12 @@ nav {
     display: none;
 }
 
+.currentpage {
+    background-color: #edae49;
+    font-weight: 900;
+
+}
+
 #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
     display: block;
     padding: .75em;
@@ -80,6 +86,38 @@ nav {
 h1 {
     font-weight: 400;
 }
+#hero-img {
+    width: 430px;
+
+}
+#summary {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+#five-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 2em;
+}
+#article-img {
+    float: right;
+    width: 400px;
+    padding: 10px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-info {
+    grid-column: 1/2;
+}
+#map-img {
+    grid-column: 2/2;
+    
+}
+
 .contentbox {
   text-align: left;
   background-color: white;
@@ -104,6 +142,9 @@ footer, footer a {
     #sky-logo {
         width: 100px;
     }
+    #hero-img {
+        width: 970px;
+    }
 
     /* css for nav- hamburger menu */
     nav {
@@ -121,6 +162,12 @@ footer, footer a {
     #navigation li:first-child {
         display: none;
     }
+    #summary {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
@@ -132,5 +179,8 @@ footer, footer a {
     #navigation {
         width: 800px;
         margin: 16px auto;
+    }
+    #hero-ing {
+        width: 600px;
     }
 }
