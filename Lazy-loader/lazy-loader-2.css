@@ -3,7 +3,41 @@
             width: 300px;
             height: 400px;
             background-color: lightgray;
+            display: block;
         }
         body {
+            display: grid;
+            grid-template-columns: 1fr;
             margin-bottom: 500px;
+        }
+        .loading {
+            background-color: lightgray;
+            min-width: 400px;
+            min-height: 400px;
+            position: relative;
+        }
+        .placeholder-loading::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -400px;
+            top: 0;
+            height: 100%;
+            width: 400px;
+            background: linear-gradient(to right, transparent 0%, #ffffffff 50%, transparent 100%);
+            animation: load 3s;
+            z-index: 50;
+        }
+        .placeholder-loading {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes load {
+            0% {
+                left: -400px;
+            }
+            100% {
+                left: 100%;
+            }
         }

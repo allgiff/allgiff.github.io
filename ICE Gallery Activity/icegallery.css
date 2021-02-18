@@ -68,9 +68,6 @@ img {
     margin: 10px;
     background-color: lightgray;
 }
-#img:hover {
-    opacity: 2;
-}
 
 @media (min-width: 768px){
     body {
