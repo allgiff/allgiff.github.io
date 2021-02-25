@@ -146,5 +146,19 @@ footer, footer a {
     .contentbox :hover {
         box-shadow: 0 0 50px #333;
     }
+        /* css for nav- hamburger menu */
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+    .content {
+    max-width: 1040px;
+    margin: 0 auto;
+    }
+    #hero {
+        max-width: 975px;
+        margin-left: 10px;
+    }
+
     
 }
