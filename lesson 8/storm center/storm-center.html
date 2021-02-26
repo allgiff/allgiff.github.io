@@ -61,14 +61,6 @@
                     <option value="snowstorm">Snow Storm</option>
                 </select>
             </label>
-            <label class="top">Storm Region
-                <select name="region">
-                    <option value="">Select Region</option>
-                    <option value="preston">Preston</option>
-                    <option value="sodasprings">Soda Springs</option>
-                    <option value="fishhaven">Fish Haven</option>
-                </select>
-            </label>
                 <label class="flexly" for="rating">Storm Severity:&nbsp;&nbsp;&nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
@@ -86,6 +78,14 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
+            <label class="top">Storm Region
+                <select name="region">
+                    <option value="">Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    <option value="fishhaven">Fish Haven</option>
+                </select>
+            </label>
         </fieldset>
         <fieldset>
                 <legend><h2>User Information</h2></legend>
