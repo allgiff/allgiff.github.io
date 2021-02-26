@@ -2,6 +2,7 @@ html {
     margin: 0 auto;
     background-color: #EBF5FE;
     font-family: "Quicksand", sans-serif;
+    max-width: 100%;
 }
 
 /* css for header - logo, name, motto */
@@ -77,15 +78,16 @@ nav {
   border-color: #444545;
   border-style: solid;
 }
+h2 {
+    color: #034078;
+}
 form fieldset {
-    margin: 2rem;
+    padding: 5px;
     border-radius: 10px;
 }
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .8rem;
 }
 form label.top input, form label.top select {
     display: block;
@@ -105,7 +107,6 @@ form label.sbs {
 }
 form input.submit {
     border: none;
-    background-color: #9c2c13;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -118,6 +119,9 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+.submitButton {
+    margin: 5px;
 }
 
 /* css for footer */
@@ -181,10 +185,5 @@ footer, footer a {
     max-width: 1040px;
     margin: 0 auto;
     }
-    #hero {
-        max-width: 975px;
-        margin-left: 10px;
-    }
-
-    
+ 
 }
