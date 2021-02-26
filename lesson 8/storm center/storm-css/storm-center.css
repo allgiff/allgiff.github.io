@@ -81,13 +81,28 @@ nav {
 h2 {
     color: #034078;
 }
+.flexly {
+    display: block;
+    padding-top: 1rem;
+    color: #034078;
+    font-size: .8rem;
+}
 form fieldset {
-    padding: 5px;
+    margin: .5rem;
+    border: 1px solid #034078;
     border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #034078;
+    margin: 0 1rem;
+    padding: 0 .5rem;
 }
 form label.top, form div {
     display: block;
     padding-top: 1rem;
+    color: #034078;
+    font-size: .8rem;
 }
 form label.top input, form label.top select {
     display: block;
