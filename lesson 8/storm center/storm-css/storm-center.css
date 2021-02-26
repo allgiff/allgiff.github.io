@@ -73,13 +73,13 @@ nav {
 .contentbox {
   background-color: white;
   padding: 15px;
-  padding-top: 2px;
   margin: 1em;
   border-color: #444545;
   border-style: solid;
 }
 h2 {
     color: #034078;
+    margin: 0 auto;
 }
 .flexly {
     display: block;
