@@ -70,7 +70,23 @@ nav {
 }
 
 /* Main CSS */
-
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+img {
+    width: 75%;
+    padding: 5px;
+}
+#contentbox {
+  background-color: white;
+  margin: 1em;
+  border-color: #444545;
+  border-style: solid;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
 
 /* css for footer */
@@ -122,5 +138,11 @@ footer, footer a {
         width: 800px;
         margin: 16px auto;
     }
- 
+    .content {
+    max-width: 1040px;
+    margin: 0 auto;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
