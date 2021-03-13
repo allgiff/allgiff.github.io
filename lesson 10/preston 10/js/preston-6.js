@@ -61,7 +61,6 @@ if (day == 4) {
 }
 //javascript for the weather summary and 5 day forcasts//
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
-const apiUrl2 = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
 
 fetch(apiUrl)
     .then(Response => { return Response.json();})
