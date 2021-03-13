@@ -60,10 +60,10 @@ if (day == 4) {
     document.getElementById('pancake').style.display = "none";
 }
 //javascript for the weather summary and 5 day forcasts//
-const requesturl = "http://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
-const requesturl2 = "http://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
+const apiUrl = "http://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
+const apiUrl2 = "http://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
 
-fetch(requesturl)
+fetch(apiUrl)
     .then(Response => { return Response.json();})
     .then(jsonObject => {
         console.table(jsonObject);
