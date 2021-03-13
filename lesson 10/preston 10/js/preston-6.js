@@ -60,7 +60,7 @@ if (day == 4) {
     document.getElementById('pancake').style.display = "none";
 }
 //javascript for the weather summary and 5 day forcasts//
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=532c1b5f6ed1af0e5f24414cb15bc219&units=imperial"
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
 
 fetch(apiUrl)
     .then(Response => { return Response.json();})
@@ -74,3 +74,5 @@ fetch(apiUrl)
         document.getElementById('humidity').innerHTML = table.main.humidity;
         document.getElementById('speed').innerHTML = table.wind.speed;
     })
+
+const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&units=imperial&appid=041f99e7d94fca76b497fa7845e20bc4"
