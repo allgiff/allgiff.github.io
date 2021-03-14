@@ -63,10 +63,10 @@ if (day == 4) {
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5605242&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
 
 fetch(apiUrl)
-    .then(Response => { return Response.json();})
-    .then(jsonObject => {
-        console.table(jsonObject);
-        table = jsonObject;
+    .then(response => response.json())
+    .then(jsObject => {
+        console.table(jsObject);
+        table = jsObject;
 
         document.getElementById('condition').innerHTML = table.weather[0].description;
         document.getElementById('temp').innerHTML = table.main.temp_max;
@@ -75,4 +75,9 @@ fetch(apiUrl)
         document.getElementById('speed').innerHTML = table.wind.speed;
     })
 
-const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&units=imperial&appid=041f99e7d94fca76b497fa7845e20bc4"
+const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
+fetch(apiUrlForc)
+    .then(response => response.json())
+    .then((jsObject) => {
+
+    });

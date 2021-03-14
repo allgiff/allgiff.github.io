@@ -97,22 +97,30 @@ h4 {
 }
 
 /* forcast section */
-#five-day {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 .forc {
+  display: block;
   background-color: white;
   padding: 15px;
   margin: 1em;
   border-color: #444545;
   border-style: solid;
+  text-align: center;
 }
-
+table {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 21px 10px; 
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+td {
+    padding: 15px 10px;
+}
 /* article section */
 #article-img {
     float: right;
@@ -127,6 +135,8 @@ h4 {
 }
 .contact-info {
     grid-column: 1/2;
+    padding: 10px;
+    margin: 5px;
 }
 #map-img {
     grid-column: 2/2;
@@ -208,5 +218,9 @@ footer, footer a {
         max-width: 975px;
         margin-left: 10px;
     }
+    #summary {
+    margin: 0;
+    display: block;
+}
 
 }
