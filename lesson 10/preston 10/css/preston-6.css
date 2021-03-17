@@ -106,20 +106,15 @@ h4 {
   border-style: solid;
   text-align: center;
 }
-table {
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
+.fiveForc {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1em;
+  width: 90%;
 }
-th {
-    text-align: left;
-    text-transform: uppercase;
-    padding: 21px 10px; 
-    font-size: 0.9em;
-    letter-spacing: 1px;
-}
-td {
-    padding: 15px 10px;
+.fiveDays img { 
+  width: 80%;
 }
 /* article section */
 #article-img {
