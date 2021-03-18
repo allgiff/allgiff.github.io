@@ -43,7 +43,7 @@ function navLocation() {
 }
 
 //javascript for the weather summary and 5 day forcasts//
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
 
 fetch(apiUrl)
     .then(response => response.json())
@@ -57,7 +57,7 @@ fetch(apiUrl)
         document.getElementById('humidity').innerHTML = table.main.humidity;
         document.getElementById('speed').innerHTML = table.wind.speed;
     });
-const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
+const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
 fetch(apiUrlForc)
     .then((response) => response.json())
     .then((jsObject) => {
