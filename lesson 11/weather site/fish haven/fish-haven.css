@@ -84,7 +84,9 @@ h1 {
 #hero{
     width: 100%;
 }  
-
+h2 {
+    text-align: center;
+}
 /* weather summary section */
 h4 {
     margin: 0;
