@@ -76,7 +76,7 @@ fetch(apiUrl)
     });
 const apiUrlForc = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=041f99e7d94fca76b497fa7845e20bc4&units=imperial"
 fetch(apiUrlForc)
-  .then((response) => response.json())
+    .then((response) => response.json())
     .then((jsObject) => {
         console.table(jsObject);
 
@@ -88,19 +88,19 @@ fetch(apiUrlForc)
         days[4] = "Thur";
         days[5] = "Fri";
         days[6] = "Sat";
-        
+
         const fiveDays = document.getElementsByClassName('fiveDays');
         const replaceTime = jsObject.list.filter(x => x.dt_txt.includes("18:00:00"));
 
         for (var i = 0; i < replaceTime.length; i++) {
 
-            const imgsrc = 'https://openweathermap.org/img/w/' + replaceTime[i].weather[0].icon + '.png';
+            const wthrIcon = 'https://openweathermap.org/img/w/' + replaceTime[i].weather[0].icon + '.png';
             fiveDays[i].childNodes[2].innerHTML = replaceTime[i].main.temp + " &degF";
-            fiveDays[i].childNodes[1].src = imgsrc;
+            fiveDays[i].childNodes[1].src = wthrIcon;
             fiveDays[i].childNodes[0].innerHTML = days[new Date(replaceTime[i].dt * 1000).getDay()];
 
             console.log(fiveDays);
             console.log(replaceTime[i]);
-            console.log(imgsrc);
+            console.log(wthrIcon);
         }
     });
