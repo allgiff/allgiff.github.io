@@ -80,7 +80,7 @@ fetch(apiUrlForc)
     .then((jsObject) => {
         console.table(jsObject);
 
-        let days = new Array(7);
+        const days = new Array(7);
         days[0] = "Sun";
         days[1] = "Mon";
         days[2] = "Tues";
