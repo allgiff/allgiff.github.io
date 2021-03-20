@@ -87,3 +87,35 @@ fetch(apiUrlForc)
             console.log(wthrIcon);
         }
     });
+
+//javascript for events//
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+    .then((response) => response.json())
+    .then((jsonObject) => {
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
+        /* Preston */
+        let card = document.createElement('section');
+        let h2 = document.createElement('h2');
+        h2.textContent = "Upcoming Events"
+        card.appendChild(h2);
+        document.querySelector('div.card1').appendChild(card);
+
+        let event1 = document.createElement('p');
+        event1.textContent = towns[2].events[0];
+        card.appendChild(event1);
+
+        let event2 = document.createElement('p');
+        event2.textContent = towns[2].events[1];
+        card.appendChild(event2);
+
+        let event3 = document.createElement('p');
+        event3.textContent = towns[2].events[2];
+        card.appendChild(event3);
+
+        let event4 = document.createElement('p');
+        event4.textContent = towns[2].events[3];
+        card.appendChild(event4);
+
+    });
