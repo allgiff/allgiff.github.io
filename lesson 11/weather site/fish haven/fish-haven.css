@@ -80,12 +80,17 @@ nav {
 /* css for main content */
 h1 {
     font-weight: 400;
+    color: #034078;
 }
 #hero{
     width: 100%;
 }  
 h2 {
     text-align: center;
+    color: #034078;
+}
+h3 {
+    color: #034078;
 }
 /* weather summary section */
 h4 {
@@ -117,6 +122,10 @@ h4 {
 }
 .fiveDays img { 
   width: 80%;
+}
+/* events section */
+.card1 {
+    text-align: center;
 }
 /* article section */
 #article-img {

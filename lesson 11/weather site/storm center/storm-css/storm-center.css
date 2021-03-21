@@ -68,7 +68,18 @@ nav {
 #navigation.responsive li {
     display: block;
 }
-
+/* text styles */
+h1 {
+    font-weight: 400;
+    color: #034078;
+} 
+h2 {
+    text-align: center;
+    color: #034078;
+}
+h3 {
+    color: #034078;
+}
 /* css for form */
 .contentbox {
   background-color: white;
