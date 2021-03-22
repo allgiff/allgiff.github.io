@@ -96,7 +96,7 @@ h4 {
 #summary {
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 20%;
 }
 
@@ -191,6 +191,9 @@ footer, footer a {
     #hero {
         margin: 10px auto;
     }
+    #summary {
+    top: 60%;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
@@ -222,6 +225,7 @@ footer, footer a {
     #summary {
     margin: 0;
     display: block;
+    top: 50%;
 }
 
 }
