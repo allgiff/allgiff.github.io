@@ -129,3 +129,4 @@ fetch(requestURL)
         cardimg3.appendChild(image3)
         document.querySelector('div.card3').appendChild(cardimg3);
     });
+//(＾▽＾)
