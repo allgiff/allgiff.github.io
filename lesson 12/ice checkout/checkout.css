@@ -53,16 +53,66 @@ h1 {
   background-color: white;
   width: 30%;
   padding-bottom: 10px; }
-  .payment .input {
+  .payment h1 {
+    margin: 2en; }
+  .payment table {
+    padding-left: 17px;
     margin-left: 2em; }
-  .payment #button1 {
-    border-radius: 25%;
+    .payment table tr #month {
+      width: 35px; }
+    .payment table tr #year {
+      width: 52px; }
+    .payment table tr #CVV {
+      width: 30px; }
+  .payment .input {
+    width: auto;
+    justify-self: center;
+    border-style: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 2em; }
+    .payment .input input {
+      background: none;
+      border: none;
+      font-size: 1.3em;
+      color: black;
+      font-weight: normal; }
+    .payment .input span {
+      font-size: 2em;
+      margin-left: 2em; }
+  .payment .buttonSet {
+    margin-left: 2em;
+    font-size: 12px; }
+  .payment .button {
+    border-radius: 40px;
     text-decoration: none;
-    background-color: #1c6ce5;
-    width: 50%;
-    padding: 1em;
-    color: white;
+    border: none;
+    background-color: inherit;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
     font-size: 1.1em;
-    font-weight: 700; }
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #1c6ce5;
+    color: white; }
+  .payment .button:hover {
+    background-color: #00a2ff;
+    color: white; }
+  .payment #button2 {
+    color: #1c6ce5;
+    font-size: .7em;
+    margin-left: 5em;
+    padding: 10px 0;
+    margin-bottom: 20px; }
+  .payment #end {
+    font-family: sans-serif;
+    text-align: end;
+    color: #b8b8b8;
+    margin-bottom: 20px;
+    font-size: 12px; }
 
 /*# sourceMappingURL=checkout.css.map */

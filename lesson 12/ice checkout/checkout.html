@@ -47,47 +47,46 @@
             <label for="fullname"> Cardholder Name
             </label><input id="fullname" type="text" placeholder="Name">
         </div>
-        <div class="input">
-            <label for="ccn">Card Number</label><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
-                autocomplete="nope" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
-        </div>
-        <div class="input" id="expire">
-            <div id="expiration">
-                <label for="card">Expiration Date</label>
-                <div id="label-1">
-                    <div id="labe-1">
-                        <label for="month">Month</label><input id="month" type="number" min="01" max="12" step="1" value="01" />
-                    </div>
-                    <div id="labe-2">
-                        <label for="year">Year</label><input id="year" type="number" min="1900" max="2099" step="1"
-                            value="2016" />
-                    </div>
-                </div>
-            </div>
-            <div id="cv">
-                <label for="cvv"> CVV </label><br><input class="required" id="field" type="number" max="999"
-                    pattern="([0-9]|[0-9]|[0-9])" value="000" name="cvv" />
-            </div>
-        </div>
-        <div class="input">
-            <label for="address">Billing Address</label><input type="text" value="222 West Main Street">
-        </div>
-        <div class="input">
-            <input type="checkbox"><label id="notop" for="same">Same as shipping address</label>
-        </div>
-        <div>
-            <div class="button">
-                <button id="button-1">
-                    Next
-                </button>
-            </div>
-            <div class="button-2">
-                <p class="terms"><a href="#">Cancel</a></p>
-            </div>
-        </div>
-        <p id="end"><span class="material-icons">
-                lock
-            </span> This is a Secure Transaction</p>
-    </section>
+<hr>
+<div class="input">
+    <label for="number">Card Number</label>
+    <input type="text" id="number" placeholder="**** **** **** ****">
+</div>
+<hr>
+
+<table>
+    <td>Expiration</td>
+    <td>Date</td>
+    <td></td>
+    <td></td>
+    <td>CVV</td>
+    <tr>
+        <th class="month">Month</th>
+        <td><input type="number" id="month" step="1" min="1" max="12" value="1"></td>
+        <th>Year</th>
+        <td><input type="number" id="year" step="1" min="1900" max="2099" value="2016"></td>
+
+        <td><input type="password" id="CVV" placeholder="***"></td>
+    </tr>
+</table>
+
+<div class="input">
+    <label for="address">Billing Address</label><br>
+    <input type="text" id="address" placeholder="place your address.">
+</div>
+<hr>
+<div class="buttonSet">
+    <input type="checkbox">Same as shipping address<br>
+    <button class="button">Next</button>
+    <p id="button2">Cancel</p>
+</div>
+
+<p id="end">
+    <span class="material-icons">
+        lock
+    </span>
+    This is a Secure Transaction
+</p>
+</section>
 </body>
 </html>
