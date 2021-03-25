@@ -75,14 +75,11 @@ h1 {
       background: none;
       border: none;
       font-size: 1.3em;
-      color: black;
+      color: #c5c5c5;
       font-weight: normal; }
     .payment .input span {
       font-size: 2em;
       margin-left: 2em; }
-  .payment .buttonSet {
-    margin-left: 2em;
-    font-size: 12px; }
   .payment .button {
     border-radius: 40px;
     text-decoration: none;

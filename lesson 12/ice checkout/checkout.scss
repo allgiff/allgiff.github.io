@@ -104,7 +104,7 @@ h1 {
                 background: none;
                 border:none;
                 font-size: 1.3em;
-                color: black;
+                color: $transparent;
                 font-weight: normal;
             }
     
@@ -113,10 +113,6 @@ h1 {
                 
                 margin-left: 2em;
             }
-        }
-        .buttonSet{
-            margin-left: 2em;
-            font-size: 12px;
         }
 
         .button{
