@@ -53,11 +53,16 @@ h1 {
   background-color: white;
   width: 30%;
   padding-bottom: 10px; }
+  .payment img {
+    width: 30%;
+    margin-left: 18em; }
   .payment h1 {
     margin: 2en; }
   .payment table {
     padding-left: 17px;
-    margin-left: 2em; }
+    margin-left: 2em;
+    color: #c5c5c5;
+    text-transform: uppercase; }
     .payment table tr #month {
       width: 35px; }
     .payment table tr #year {
@@ -70,12 +75,13 @@ h1 {
     border-style: none;
     border-radius: 50px;
     padding: 10px;
-    margin-left: 2em; }
+    margin-left: 2em;
+    color: #c5c5c5;
+    text-transform: uppercase; }
     .payment .input input {
       background: none;
       border: none;
       font-size: 1.3em;
-      color: #c5c5c5;
       font-weight: normal; }
     .payment .input span {
       font-size: 2em;
@@ -96,6 +102,12 @@ h1 {
     margin-top: 20px;
     background-color: #1c6ce5;
     color: white; }
+  .payment #return {
+    color: #1c6ce5;
+    font-size: .7em;
+    margin-left: 5em;
+    padding: 10px 0;
+    margin-bottom: 20px; }
   .payment .button:hover {
     background-color: #00a2ff;
     color: white; }
@@ -111,5 +123,12 @@ h1 {
     color: #b8b8b8;
     margin-bottom: 20px;
     font-size: 12px; }
+  .payment #shipping {
+    color: #c5c5c5; }
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto; } }
 
 /*# sourceMappingURL=checkout.css.map */
