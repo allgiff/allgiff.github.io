@@ -99,7 +99,7 @@ h4 {
 #summary {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 55%;
     left: 20%;
 }
 
@@ -197,7 +197,7 @@ footer, footer a {
         margin: 10px auto;
     }
     #summary {
-    top: 60%;
+    top: 45%;
     }
 }
 
