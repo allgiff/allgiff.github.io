@@ -7,6 +7,7 @@ h1 {
 }
 p {
     font-family: 'Source Sans Pro';
+    text-align: left;
 }
 /* css for header & logo */
 header {
@@ -20,9 +21,6 @@ nav {
   overflow: hidden;
   background-color: #4a4e69;
   font-family: 'Source Sans Pro';
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto;
 }
 
 /* Navigation links */
@@ -93,10 +91,28 @@ nav a:hover, .subnav:hover .subnavbtn {
 }
 
 /* main css */
+.button-container{
+display:inline-block;
+position:relative;
+width: 100%;
+}
+
+.button-container a{
+position: absolute;
+bottom:4em;
+left:4em;
+background-color:#4a4e69;
+border-radius:1.5em;
+color: #F8F4F1;
+text-transform:uppercase;
+padding:1em 1.5em;
+text-decoration: none;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
 }
 #banner-img {
