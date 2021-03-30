@@ -15,6 +15,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #4a4e69;
 }
 /* The navigation menu */
 nav {
@@ -104,7 +105,7 @@ left:4em;
 background-color:#4a4e69;
 border-radius:1.5em;
 color: #F8F4F1;
-text-transform:uppercase;
+text-transform: uppercase;
 padding:1em 1.5em;
 text-decoration: none;
 }

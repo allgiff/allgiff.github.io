@@ -14,6 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #4a4e69;
 }
 /* The navigation menu */
 nav {
@@ -91,7 +92,6 @@ nav {
 }
 /* css for temple stuff */
 #temples {
-    background-color: blanchedalmond;
     text-align: center;
     padding-bottom: 5px;
     border-radius: 15px;
