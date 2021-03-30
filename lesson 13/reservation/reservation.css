@@ -84,7 +84,7 @@ nav {
 .subnav:hover .subnav-content {
   display: block;
 }
-.current {
+#current {
     background-color: #9a8c98;
     font-weight: 700;
     color: #F8F4F1;
