@@ -19,12 +19,14 @@ header {
 nav {
   overflow: hidden;
   background-color: #4a4e69;
-  margin: 0 auto;
   font-family: 'Source Sans Pro';
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 /* Navigation links */
-.navbar a {
+nav a {
   float: left;
   font-size: 16px;
   color: #F8F4F1;
@@ -53,7 +55,7 @@ nav {
 }
 
 /* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
+nav a:hover, .subnav:hover .subnavbtn {
   background-color: #9a8c98;
 }
 
@@ -90,6 +92,20 @@ nav {
     color: #F8F4F1;
 }
 
+/* main css */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+#banner-img {
+    width: 100%;
+}
+.homeImg {
+    width: 100%;
+    height: 300px;
+}
 
 /* css for footer */
 footer {    
@@ -108,7 +124,7 @@ footer, footer a {
 
 @media only screen and (min-width: 54.5em){ 
     .content {
-        max-width: 1040px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 }
