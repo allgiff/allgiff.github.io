@@ -1,0 +1,114 @@
+html {
+    margin: 0 auto;
+    background-color: #F8F4F1;
+}
+h1 {
+    font-family: 'Lora', serif;
+}
+p {
+    font-family: 'Source Sans Pro';
+}
+/* css for header & logo */
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* The navigation menu */
+nav {
+  overflow: hidden;
+  background-color: #4a4e69;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro';
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #F8F4F1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F8F4F1;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #9a8c98;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #9a8c98;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: #F8F4F1;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+.current {
+    background-color: #9a8c98;
+    font-weight: 700;
+    color: #F8F4F1;
+}
+
+
+/* css for footer */
+footer {    
+    background-color: #4a4e69;
+    color: #F8F4F1;
+    padding: 1px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer, footer a {
+    color: #F8F4F1;
+}
+@media only screen and (min-width: 34.5em){ 
+
+}
+
+@media only screen and (min-width: 54.5em){ 
+    .content {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+}
