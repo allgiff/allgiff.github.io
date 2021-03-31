@@ -89,7 +89,32 @@ ul li ul li {
 
 
 /* main css */
+.templecard img {
+    max-width: 100%;
+}
 
+.templecard {
+    border-radius: 6px 6px 6px 6px;
+    background-color: white;
+    padding-bottom: 5px;
+    padding: 10px;
+    text-align: center;    
+    margin: 0 auto;
+    max-width: 360px;    
+    min-width: 300px;
+}
+#temples {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+#temples p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+#temples h2, h1, h3, h4, h5 {
+    font-family: 'Lora', serif;
+}
 
 /* css for footer */
 footer {    
@@ -105,6 +130,11 @@ footer, footer a {
       .cards {
     grid-template-columns: 1fr 1fr 1fr;
 }
+    #temples {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 54.5em){ 
