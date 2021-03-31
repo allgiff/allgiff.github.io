@@ -89,6 +89,10 @@ ul li ul li {
 
 
 /* main css */
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .button-container{
 display:inline-block;
 position:relative;
