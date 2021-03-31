@@ -20,11 +20,11 @@ function buildTempleCard(temple) {
 
     card.innerHTML = `<h2>${temple.name}</h2>
                           <img src="${temple.imageurl}" alt="${temple.name}">
-                          <p>Address:<br><b>${temple.address1}<br>${temple.city}, ${temple.state} ${temple.zip}</b></p>
-                          <p>Telephone:<br><b>${temple.phone}</b>
-                          <p>Services:<br><b>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</b></p>
-                          <p>Closures:<br><b>${temple.closures}</b></p>
-                          <p>Schedule:<br><b>${temple.schedule}</b></p>
+                          <p><b>Address:</b><br>${temple.address1}<br>${temple.city}, ${temple.state} ${temple.zip}</p>
+                          <p><b>Telephone:</b><br>${temple.phone}</p>
+                          <p><b>Services:</b><br>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</p>
+                          <p><b>Closures:</b><br>${temple.closures[0]}<br>${temple.closures[1]}<br>${temple.closures[2]}<br>${temple.closures[3]}</p>
+                          <p><b>Schedule:</b><br>${temple.schedule}</p>
                           
                           <h3 class="hero-title">Weather</h3>
                           <img src="" class="frcstimg1" id="current-img${temple.id}"></p>
@@ -42,10 +42,10 @@ window.addEventListener('load', () => {
     fetch(portland)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.getElementById('current-img1').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.getElementById('current-img1').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.getElementById('current-condition1').textContent = jsObject.list[0].weather[0].main;
-            document.getElementById('current-temp1').textContent = jsObject.list[0].main.temp;
+            document.createElement('current-img1').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
+            document.createElement('current-img1').setAttribute('alt', jsObject.list[0].weather[0].description);
+            document.createElement('current-condition1').textContent = jsObject.list[0].weather[0].main;
+            document.createElement('current-temp1').textContent = jsObject.list[0].main.temp;
             console.log(jsObject);
         });
 
@@ -54,10 +54,10 @@ window.addEventListener('load', () => {
     fetch(laie)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.getElementById('current-img2').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.getElementById('current-img2').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.getElementById('current-condition2').textContent = jsObject.list[0].weather[0].main;
-            document.getElementById('current-temp2').textContent = jsObject.list[0].main.temp;
+            document.createElement('current-img2').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
+            document.createElement('current-img2').setAttribute('alt', jsObject.list[0].weather[0].description);
+            document.createElement('current-condition2').textContent = jsObject.list[0].weather[0].main;
+            document.createElement('current-temp2').textContent = jsObject.list[0].main.temp;
             console.log(jsObject);
         });
 
@@ -66,10 +66,10 @@ window.addEventListener('load', () => {
     fetch(sanDiego)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.getElementById('current-img3').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.getElementById('current-img3').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.getElementById('current-condition3').textContent = jsObject.list[0].weather[0].main;
-            document.getElementById('current-temp3').textContent = jsObject.list[0].main.temp;
+            document.createElement('current-img3').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
+            document.createElement('current-img3').setAttribute('alt', jsObject.list[0].weather[0].description);
+            document.createElement('current-condition3').textContent = jsObject.list[0].weather[0].main;
+            document.createElement('current-temp3').textContent = jsObject.list[0].main.temp;
             console.log(jsObject);
         });
 
@@ -78,10 +78,10 @@ window.addEventListener('load', () => {
     fetch(draper)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.getElementById('current-img4').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.getElementById('current-img4').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.getElementById('current-condition4').textContent = jsObject.list[0].weather[0].main;
-            document.getElementById('current-temp4').textContent = jsObject.list[0].main.temp;
+            document.createElement('current-img4').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
+            document.createElement('current-img4').setAttribute('alt', jsObject.list[0].weather[0].description);
+            document.createElement('current-condition4').textContent = jsObject.list[0].weather[0].main;
+            document.createElement('current-temp4').textContent = jsObject.list[0].main.temp;
             console.log(jsObject);
         });
 
