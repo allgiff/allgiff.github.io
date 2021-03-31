@@ -10,10 +10,9 @@ nav {
 }
 
 ul {
-  background: #4a4e69;
   list-style: none;
-  margin: 0;
-  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
 
 li {
