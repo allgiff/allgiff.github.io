@@ -93,6 +93,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 iframe {
   margin: 0 auto;
