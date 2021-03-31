@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     //const serverName = "https://127.0.0.1:5500/ice/temples/"
-    fetch(templesList.json)
+    const requestURL = "templesList.json"
+    fetch(requestURL)
         .then((response) => {
             return response.json();
         })
