@@ -7,8 +7,6 @@ h1 {
 }
 p {
     font-family: 'Source Sans Pro';
-    text-align: left;
-    color: #4a4e69;
 }
 /* css for header & logo */
 header {
@@ -27,6 +25,7 @@ nav {
   background-color: #4a4e69;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 ul {
@@ -111,7 +110,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     margin-top: 10px;
 }
@@ -121,6 +120,9 @@ font-family: 'Source Sans Pro', sans-serif;
 .homeImg {
     width: 100%;
     height: 300px;
+}
+.info {
+  text-align: left;
 }
 
 /* css for footer */
@@ -134,7 +136,9 @@ footer, footer a {
     color: #F8F4F1;
 }
 @media only screen and (min-width: 34.5em){ 
-
+      .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
 
 @media only screen and (min-width: 54.5em){ 
@@ -142,4 +146,7 @@ footer, footer a {
         max-width: 1040px;
         margin: 0 auto;
     }
+    .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
