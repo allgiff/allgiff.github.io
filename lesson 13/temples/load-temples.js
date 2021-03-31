@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     //const serverName = "https://127.0.0.1:5500/ice/temples/"
-    const requestURL = "templesList.json"
+    const requestURL = "https://allgiff.github.io/lesson%2013/temples/templesList.json"
     fetch(requestURL)
         .then((response) => {
             return response.json();
