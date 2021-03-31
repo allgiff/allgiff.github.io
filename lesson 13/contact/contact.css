@@ -99,6 +99,10 @@ iframe {
   padding-top: 30px;
 }
 /* contact form */
+h2 {
+  font-family: 'Lora', serif;
+  text-align: center;
+}
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
