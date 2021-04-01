@@ -6,9 +6,10 @@
         "closures":[ "3 April 2021", "26 July 2021","16 August 2021, 2 October 2021", "24 November 2021 (Limited Operations)", "25 November 2021", "24 December 2021", "25 December 2021", "31 December 2021"],
         "imageurl": "https://assets.ldscdn.org/2c/77/2c77d5fd39c0646e0122b1a1472f1d538aa3aa7e/portland_oregon_temple.jpeg",
         "phone": "(503) 639-7066",
-        "schedule": "Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19",
+        "schedule": "Please contact the Temple to find out about session schedules. They have been affected by Covid-19",
         "services":["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "state": "OR",
+        "id": "5746545",
         "zip": 97424
     },
         {
@@ -21,9 +22,10 @@
             "24 December 2021 - 25 December 2021"],
         "imageurl": "https://assets.ldscdn.org/58/36/5836fd79f0f92e33bfe124e2f86ff43a382af1be/laie_hawaii_temple_lds.jpg",
         "phone": "(808) 293-2427",
-        "schedule": "Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19",
+        "schedule": "Please contact the Temple to find out about session schedules. They have been affected by Covid-19",
         "services":["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "state": "HI",
+        "id": "5856195",
         "zip": 96762
     },
         {
@@ -38,9 +40,10 @@
             "31 December 2021"],
         "imageurl": "https://assets.ldscdn.org/4f/eb/4feb5a4e556ec9eee605991da421a198255e058a/san_diego_california_temple.jpeg",
         "phone": "(858) 622-0991",
-        "schedule": "Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19",
+        "schedule": "Please contact the Temple to find out about session schedules. They have been affected by Covid-19",
         "services":["No clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "state": "CA",
+        "id": "5391811",
         "zip": 92122
     },
         {
@@ -57,9 +60,10 @@
             "31 December 2021"],
         "imageurl": "https://assets.ldscdn.org/9d/dc/9ddc03f577e4395b3408d00dcc874fb6b74b36de/draper_utah_temple.jpeg",
         "phone": "(858) 622-0991",
-        "schedule": "Please contact the Temple to find out about ordinance and session schedules, as these have been affected by Covid-19",
+        "schedule": "Please contact the Temple to find out about session schedules. They have been affected by Covid-19",
         "services":["Clothing rental available","No cafeteria available","No patron housing available","Distribution center nearby"],
         "state": "UT",
+        "id": "5774001",
         "zip": 84020
     }
 

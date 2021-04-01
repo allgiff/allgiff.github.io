@@ -54,27 +54,65 @@
 
     <main class="content">
         <div id="container">
-            <form>
-                <h2>Make a Reservation</h2>
+            <h2>Make a Reservation</h2>
 
-                <label for="locate">Hotel Location</label>
-                <input type="text" id="locate" name="Location" placeholder="Address">
+            <form>
+                <div id="pers-info">
+                <h3>Personal Information</h3>
                 
-                <label for="fname">Full Name</label>
+                <label for="fname">Full Name:</label>
                 <input type="text" id="fname" name="fullname" placeholder="John Doe">
 
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="text" id="email" name="email" placeholder="email@example.com">
 
-                <label for="phone"> Phone <input type="tel" name="phone" placeholder="123-555-1234"></label><br><br>
+                <label for="phone"> Phone:</label><br>
+                <input type="tel" name="phone" placeholder="123-555-1234"><br><br>
 
-                <label for="state">Home State or Country</label>
+                <label for="state">Home State or Country:</label>
                 <input type="text" id="state" name="state" placeholder="Oregon, USA">
+                </div>
 
-                <label for="subject">Special Accomadations/Comments</label>
+                <div id="res-info">
+                <h3>Reservation Information</h3>
+
+                <label for="inDate">Check-In Date:<br>
+                <input type="date" id="inDate" name="inDate"></label><br><br>
+
+                <label for="outDate">Check-Out Date:<br>
+                <input type="date" id="outDate" name="outDate"></label><br><br>
+
+                <label for="guests">Number of Guests:<br>
+                <input type="number" id="guests" name="guests"></label><br><br>
+
+                <label for="rooms">Room Preference: <br>
+                    <input list="rooms" name="rooms">
+                    <datalist id="rooms">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                        <option value="">
+                    </datalist>
+                </label><br><br>
+
+                <label for="location">Location:<br>
+                    <select id="location" name="hotel-location">
+                        <option value="rexburg">Rexburg, ID</option>
+                        <option value="anchorage">Anchorage, AK</option>
+                        <option value="manhattan">Manhattan, NY</option>
+                        <option value="city_center">Provo City Center, UT</option>
+                    </select>
+                </label>
+                </div>
+
+                <div id="special">
+                <label id="title" for="subject">Special Accomadations/Comments</label>
                 <textarea id="subject" name="subject" placeholder="Write a message" style="height:100px"></textarea>
 
                 <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
     </main>

@@ -111,9 +111,11 @@ ul li ul li {
 #temples p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
+    color: #4a4e69;
 }
 #temples h2, h1, h3, h4, h5 {
     font-family: 'Lora', serif;
+    color: #4a4e69;
 }
 
 /* css for footer */

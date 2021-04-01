@@ -66,6 +66,12 @@ ul li ul {
   margin-top: 1rem;
   left: 0;
   display: none;
+  z-index: 12;
+}
+
+ul li ul li{
+  z-index: 12;
+  margin-left: -10px;
 }
 
 ul li:hover > ul,

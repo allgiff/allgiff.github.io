@@ -7,31 +7,31 @@ window.addEventListener('load', () => {
         })
         .then((jsonObject) => {
             console.log(jsonObject);
+            i = 1;
             Object.entries(jsonObject).forEach(([key, temple]) => {
-                buildTempleCard(temple);
+                buildTempleCard(temple, i);
+                i++;
             });
         });
 });
 
-function buildTempleCard(temple) {
+function buildTempleCard(temple,i) {
     console.log(temple);
     let card = document.createElement("section");
     card.classList.add("templecard");
-
     card.innerHTML = `<h2>${temple.name}</h2>
                           <img src="${temple.imageurl}" alt="${temple.name}">
-                          <p><b>Address:</b><br>${temple.address1}<br>${temple.city}, ${temple.state} ${temple.zip}</p>
+                          <p><b>Address:</b><br>${temple.address1}<br>${temple.city}, ${temple.state}</p>
                           <p><b>Telephone:</b><br>${temple.phone}</p>
                           <p><b>Services:</b><br>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</p>
                           <p><b>Closures:</b><br>${temple.closures[0]}<br>${temple.closures[1]}<br>${temple.closures[2]}<br>${temple.closures[3]}</p>
                           <p><b>Schedule:</b><br>${temple.schedule}</p>
                           
                           <h3 class="hero-title">Weather</h3>
-                          <img src="" class="frcstimg1" id="current-img${temple.id}"></p>
-                          <p>Current Weather: <strong><span id="current-condition${temple.id}"></span></strong></p>
-                          <p>Temperature: <strong><span id="current-temp${temple.id}"></span>&#176; F</strong></p>
-
-                          `;
+                          <img src="" class="weather-report1" id="img"${temple.id}></p>
+                          <p>Current Weather: <strong><span id="condition${i}"${temple.id}></span></strong></p>
+                          <p>Temperature: <strong><span id="temp${i}"${temple.id}></span>&#176; F</strong></p>`;
+    
     document.querySelector("#temples").appendChild(card);
 }
 
@@ -42,10 +42,9 @@ window.addEventListener('load', () => {
     fetch(portland)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.createElement('current-img1').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.createElement('current-img1').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.createElement('current-condition1').textContent = jsObject.list[0].weather[0].main;
-            document.createElement('current-temp1').textContent = jsObject.list[0].main.temp;
+            document.getElementById('img1').setAttribute = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+            document.getElementById('condition1').textContent = jsObject.list[0].weather[0].description;
+            document.getElementById('temp1').textContent = jsObject.list[0].main.temp;
             console.log(jsObject);
         });
 
@@ -54,10 +53,10 @@ window.addEventListener('load', () => {
     fetch(laie)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.createElement('current-img2').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.createElement('current-img2').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.createElement('current-condition2').textContent = jsObject.list[0].weather[0].main;
-            document.createElement('current-temp2').textContent = jsObject.list[0].main.temp;
+            const wthrIcon = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+            document.getElementById('condition2').textContent = jsObject.list[0].weather[0].description;
+            document.getElementById('temp2').textContent = jsObject.list[0].main.temp;
+            console.log(wthrIcon);
             console.log(jsObject);
         });
 
@@ -66,10 +65,10 @@ window.addEventListener('load', () => {
     fetch(sanDiego)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.createElement('current-img3').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.createElement('current-img3').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.createElement('current-condition3').textContent = jsObject.list[0].weather[0].main;
-            document.createElement('current-temp3').textContent = jsObject.list[0].main.temp;
+            const wthrIcon = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+            document.getElementById('condition3').textContent = jsObject.list[0].weather[0].description;
+            document.getElementById('temp3').textContent = jsObject.list[0].main.temp;
+            console.log(wthrIcon);
             console.log(jsObject);
         });
 
@@ -78,10 +77,10 @@ window.addEventListener('load', () => {
     fetch(draper)
         .then((response) => response.json())
         .then((jsObject) => {
-            document.createElement('current-img4').setAttribute('src', 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png');
-            document.createElement('current-img4').setAttribute('alt', jsObject.list[0].weather[0].description);
-            document.createElement('current-condition4').textContent = jsObject.list[0].weather[0].main;
-            document.createElement('current-temp4').textContent = jsObject.list[0].main.temp;
+            const wthrIcon = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+            document.getElementById('condition4').textContent = jsObject.list[0].weather[0].description;
+            document.getElementById('temp4').textContent = jsObject.list[0].main.temp;
+            console.log(wthrIcon);
             console.log(jsObject);
         });
 

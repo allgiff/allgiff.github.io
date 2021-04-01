@@ -110,7 +110,7 @@ const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
     .then((response) => response.json())
     .then((jsonObject) => {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        console.table(jsonObject);  
         const towns = jsonObject['towns'];
         /* Preston */
         let card = document.createElement('section');
