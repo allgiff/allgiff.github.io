@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Inns and Suites Services</title>
+    <title>Temple Inns and Suites Home</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="services.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body>
@@ -24,31 +26,48 @@
     </header>
 
     <nav>
-        <!-- The navigation menu -->
-        <div class="navbar">
-            <a href="https://allgiff.github.io/lesson%2013/home/index.html">Home</a>
-            <a href="https://allgiff.github.io/lesson%2013/temples/temples.html">Temples</a>
-
-            <div class="subnav">
-                <button class="subnavbtn"><a href="https://allgiff.github.io/lesson%2013/reservation/reservation.html"></a>Reservations <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="https://allgiff.github.io/lesson%2013/services/wedding/wedding.html">Wedding</a>
-                    <a href="https://allgiff.github.io/lesson%2013/services/missionary/missionary.html">Missionary</a>
-                </div>
-            </div>
-            <a class="current" href="https://allgiff.github.io/lesson%2013/services/services.html">Services</a>
-            <a href="https://allgiff.github.io/lesson%2013/contact/contact.html">Contact</a>
-        </div>
+        <!--main list (parent items)-->
+        <ul id="navigation">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="current"><a href="https://allgiff.github.io/lesson%2013/home/index.html">Home</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2013/temples/temples.html">Temple</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2013/reservation/reservation.html">Reservations</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2013/services/services.html">Services</a>
+                <!--Enclose child within a list item-->
+                <!--Sub list (child items)-->
+                <ul class="dropdown">
+                    <li><a
+                            href="https://allgiff.github.io/lesson%2013/services/missionary/missionary.html">Missionary</a>
+                    </li>
+                    <li><a href="https://allgiff.github.io/lesson%2013/services/wedding/wedding.html"></a>Wedding</li>
+                </ul>
+            </li>
+            <!--End parent item-->
+            <li><a href="https://allgiff.github.io/lesson%2013/contact/contact.html">Contact</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </nav>
 
-    <main class="Content">
-
+    <main class="content">
+       
     </main>
 
     <footer>
-        <p class="legal"> &copy; <span id="copyrightyear"></span>Temple Inns & Suites | Attributions | Allie Gifford</p>
+        <p class="legal"> &copy; <span id="copyrightyear"></span>Temple Inns & Suites | Attributions| Allie Gifford</p>
         <p id="date"></p>
     </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: ['Lato', 'Source Sans Pro']
+                    }
+                });
+            </script>
 </body>
 
 </html>
