@@ -2,11 +2,13 @@ html {
     margin: 0 auto;
     background-color: #F8F4F1;
 }
-h1 {
+h1, h2 {
     font-family: 'Lora', serif;
+    color: #4a4e69;
 }
 p {
     font-family: 'Source Sans Pro';
+    color: #4a4e69;
 }
 /* css for header & logo */
 header {
@@ -89,7 +91,25 @@ ul li ul li {
 
 
 /* main css */
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  .content {
+    margin: 0 auto;
+    text-align: center;
+  }
 
+#amen {
+  border: 3px solid #4a4e69;
+  border-radius: 10%;
+  padding: 10px;
+}
+#serv{
+  border: 3px solid #4a4e69;
+  border-radius: 10%;
+  padding: 10px;
+}
 /* css for footer */
 footer {    
     background-color: #4a4e69;
@@ -108,7 +128,11 @@ footer, footer a {
 
 @media only screen and (min-width: 54.5em){ 
     .content {
-        max-width: 1040px;
-        margin: 0 auto;
+        max-width: 900px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
     }
 }

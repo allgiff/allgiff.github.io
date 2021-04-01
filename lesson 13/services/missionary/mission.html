@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Inns and Suites Home</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="mission.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
@@ -16,17 +15,17 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
-
 <body>
-    <header>
-        <img id="logo" src="images/temple-logo.png" alt="Logo for Temple inns site">
-        <div class="headings">
-            <h1>Temple Inns & Suites</h1>
-        </div>
-    </header>
+        <header>
+            <img id="logo" src="images/temple-logo.png" alt="Logo for Temple inns site">
+            <div class="headings">
+                <h1>Temple Inns & Suites</h1>
+            </div>
+        </header>
 
     <nav>
         <!--main list (parent items)-->
+        <div>
         <ul id="navigation">
             <li></li>
             <li></li>
@@ -34,12 +33,11 @@
             <li><a href="https://allgiff.github.io/lesson%2013/home/index.html">Home</a></li>
             <li><a href="https://allgiff.github.io/lesson%2013/temples/temples.html">Temple</a></li>
             <li><a href="https://allgiff.github.io/lesson%2013/reservation/reservation.html">Reservations</a></li>
-            <li class="current"><a href="https://allgiff.github.io/lesson%2013/services/services.html">Services</a>
+            <li><a href="https://allgiff.github.io/lesson%2013/services/services.html">Services</a>
                 <!--Enclose child within a list item-->
                 <!--Sub list (child items)-->
                 <ul class="dropdown">
-                    <li><a
-                            href="https://allgiff.github.io/lesson%2013/services/missionary/missionary.html">Missionary</a>
+                    <li class="current"><a href="https://allgiff.github.io/lesson%2013/services/missionary/missionary.html">Missionary</a>
                     </li>
                     <li><a href="https://allgiff.github.io/lesson%2013/services/wedding/wedding.html"></a>Wedding</li>
                 </ul>
@@ -50,38 +48,18 @@
             <li></li>
             <li></li>
         </ul>
+        </div>
     </nav>
 
     <main class="content">
-        <div id="amen">
-            <h2>Specialized Services</h2>
-                <p>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and
-                from church clothes</p>
-                <p>A playroom and low-cost, short-term babysitting services for the children of patrons</p>
-                <p>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</p>
-                <p>Temple history themed reception and sitting area</p>
-                <p>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food
-                preparation and serving</p>
-                <p>A family search center that supports family search and ordinance work</p>
-        </div>
 
-        <div id="serv">
-            <h2>Free Amenities</h2>
-                <p>Breakfast</p>
-                <p>Exercise/workout room</p>
-                <p>Indoor pool</p>
-                <p>WiFi high-speed internet access and smart TVs</p>
-                <p>Parking</p>
-                <p>Temple shuttle</p>
-                <p>Family history consultation and family ordinance card service</p>
-        </div>
-       
     </main>
 
     <footer>
         <p class="legal"> &copy; <span id="copyrightyear"></span>Temple Inns & Suites | Attributions| Allie Gifford</p>
         <p id="date"></p>
     </footer>
+
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
             <script>
                 WebFont.load({
@@ -91,5 +69,4 @@
                 });
             </script>
 </body>
-
 </html>
