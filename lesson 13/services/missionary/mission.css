@@ -2,13 +2,12 @@ html {
     margin: 0 auto;
     background-color: #F8F4F1;
 }
-h1 {
+h1, h2, h3 {
     font-family: 'Lora', serif;
     color: #4a4e69;
 }
 p {
     font-family: 'Source Sans Pro';
-    color: #4a4e69;
 }
 /* css for header & logo */
 header {
@@ -68,12 +67,6 @@ ul li ul {
   margin-top: 1rem;
   left: 0;
   display: none;
-  z-index: 12;
-}
-
-ul li ul li{
-  z-index: 12;
-  margin-left: -10px;
 }
 
 ul li:hover > ul,
@@ -98,45 +91,56 @@ ul li ul li {
 
 /* main css */
 main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.button-container{
-display:inline-block;
-position:relative;
-width: 100%;
+iframe {
+  margin: 0 auto;
+  padding-top: 30px;
 }
-
-.button-container a{
-position: absolute;
-bottom:4em;
-left:4em;
-background-color:#4a4e69;
-border-radius:1.5em;
-color: #F8F4F1;
-text-transform: uppercase;
-padding:1em 1.5em;
-text-decoration: none;
-font-family: 'Source Sans Pro', sans-serif;
+/* contact form */
+h2 {
+  font-family: 'Lora', serif;
+  text-align: center;
 }
-
-.cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    margin-top: 10px;
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #4a4e69; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  background-color: #F8F4F1;
+  color: #F8F4F1;
 }
-#banner-img {
-    width: 100%;
+input[type=submit] {
+  background-color: #9a8c98;
+  color: #F8F4F1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.homeImg {
-    width: 100%;
-    height: 300px;
+input[type=submit]:hover {
+  background-color: #4a4e69;
 }
-.info {
-  text-align: left;
+form{
+  border-radius: 5px;
+  background-color: #4a4e69;
+  padding: 20px;
+  color: #F8F4F1;
+  margin: 0 auto;
 }
-
+form p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#head {
+  color: #F8F4F1;
+}
 /* css for footer */
 footer {    
     background-color: #4a4e69;
@@ -148,8 +152,8 @@ footer, footer a {
     color: #F8F4F1;
 }
 @media only screen and (min-width: 34.5em){ 
-      .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    main {
+    grid-template-columns: 1fr 1fr;
 }
 }
 
@@ -158,7 +162,7 @@ footer, footer a {
         max-width: 1040px;
         margin: 0 auto;
     }
-    .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    main {
+    grid-template-columns: 1fr 1fr;
 }
 }
