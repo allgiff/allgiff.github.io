@@ -93,7 +93,20 @@ ul li ul li {
 main {
   padding-left: 20px;
   padding-right: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
 }
+#recp-img{
+    width: 500px;
+    padding: 10px;
+    grid-column: 2;
+}
+#recep-info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 /* css for footer */
 footer {    
     background-color: #4a4e69;
@@ -105,9 +118,6 @@ footer, footer a {
     color: #F8F4F1;
 }
 @media only screen and (min-width: 34.5em){ 
-    main {
-    grid-template-columns: 1fr 1fr;
-}
 }
 
 @media only screen and (min-width: 54.5em){ 
@@ -116,6 +126,6 @@ footer, footer a {
         margin: 0 auto;
     }
     main {
-    grid-template-columns: 1fr 1fr;
-}
+      grid-template-columns: 1fr 1fr;
+    }
 }
