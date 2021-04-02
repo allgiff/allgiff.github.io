@@ -143,7 +143,12 @@ form h3 {
 form {
   font-family: 'Source Sans Pro';
 }
-
+#pers-info {
+ padding: 15px;
+}
+#res-info {
+   padding: 15px;
+}
 /* css for footer */
 footer {    
     background-color: #4a4e69;

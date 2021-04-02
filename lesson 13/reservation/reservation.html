@@ -56,7 +56,7 @@
         <div id="container">
             <h2>Make a Reservation</h2>
 
-            <form>
+            <form class="container">
                 <div id="pers-info">
                 <h3>Personal Information</h3>
                 
@@ -88,17 +88,18 @@
                 <label for="rooms">Room Preference: <br>
                     <input list="rooms" name="rooms">
                     <datalist id="rooms">
-                        <option value="">
-                        <option value="">
-                        <option value="">
-                        <option value="">
-                        <option value="">
-                        <option value="">
+                        <option value="Queen Suite">
+                        <option value="King Suite">
+                        <option value="Queen Basic">
+                        <option value="Twin">
+                        <option value="Hollywood Twin">
+                        <option value="Studio">
                     </datalist>
                 </label><br><br>
 
                 <label for="location">Location:<br>
                     <select id="location" name="hotel-location">
+                        <option value="">Please Select &#9662;</option>
                         <option value="rexburg">Rexburg, ID</option>
                         <option value="anchorage">Anchorage, AK</option>
                         <option value="manhattan">Manhattan, NY</option>
