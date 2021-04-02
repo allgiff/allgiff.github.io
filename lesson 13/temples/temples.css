@@ -96,10 +96,9 @@ ul li ul li {
 .templecard {
   border: 3px solid #4a4e69;
   padding: 10px;
-    text-align: center;    
-    margin: 0 auto;
-    max-width: 360px;    
-    min-width: 300px;
+  text-align: center;    
+  margin: 0 auto;
+  border-radius: 15px;
 }
 #temples {
     display: grid;
