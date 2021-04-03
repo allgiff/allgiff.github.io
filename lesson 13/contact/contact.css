@@ -178,7 +178,7 @@ footer, footer a {
     #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
         text-align: center;
     }
-    #navigation li:first-child {
+    .ham {
         display: none;
     }
     ul {

@@ -1,26 +1,3 @@
-html {
-    margin: 0 auto;
-    background-color: #F8F4F1;
-}
-h1, h2, h3 {
-    font-family: 'Lora', serif;
-    color: #4a4e69;
-}
-p {
-    font-family: 'Source Sans Pro';
-}
-/* css for header & logo */
-header {
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #4a4e69;
-}
-a {
-  text-decoration: none;
-}
-
 nav {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #4a4e69;
@@ -33,6 +10,7 @@ nav {
   margin-top: 15px;
   margin-bottom: 15px;
   margin: 0 auto;
+  text-decoration: none;
 }
 #navigation li:first-child {
     display: block;
@@ -52,7 +30,6 @@ li {
   color: #fff;
   background: #4a4e69;
   display: block;
-  float: left;
   padding: 1rem;
   position: relative;
   text-decoration: none;
@@ -78,7 +55,6 @@ ul li ul {
   opacity: 0;
   position: absolute;
   margin-top: 1rem;
-  z-index: 12;
   left: 0;
   display: none;
 }
@@ -106,31 +82,6 @@ ul li ul li {
 }
 
 
-/* main css */
-main {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr;
-}
-#recep-info{
-  padding: 10px;
-}
-#recp-img {
-  padding: 10px;
-  width: 100%;
-}
-/* css for footer */
-footer {    
-    background-color: #4a4e69;
-    padding: 1px;
-    text-align: center;
-    margin-top: 20px;
-}
-footer, footer a {
-    color: #F8F4F1;
-}
 @media only screen and (min-width: 34.5em){ 
     nav {
         max-width: 100%;
@@ -170,20 +121,8 @@ footer, footer a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
-  .content {
-        max-width: 1040px;
-        margin: 0 auto;
-    }
-    main {
-      grid-template-columns: 1fr 1fr;
-    }
-    #recp-img{
-    width: 500px;
-    padding: 10px;
-    grid-column: 2;
-}
-#recep-info {
-  grid-column: 1;
-  grid-row: 1;
+
+.dropdown li:first-child {
+    display: block;
 }
 }
