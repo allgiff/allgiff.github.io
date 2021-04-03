@@ -108,22 +108,19 @@ ul li ul li {
 
 /* main css */
 main {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
 }
-#recp-img{
-    width: 500px;
-    padding: 10px;
-    grid-column: 2;
+#recep-info{
+  padding: 10px;
 }
-#recep-info {
-  grid-column: 1;
-  grid-row: 1;
+#recp-img {
+  padding: 10px;
+  width: 100%;
 }
-
 /* css for footer */
 footer {    
     background-color: #4a4e69;
@@ -180,4 +177,13 @@ footer, footer a {
     main {
       grid-template-columns: 1fr 1fr;
     }
+    #recp-img{
+    width: 500px;
+    padding: 10px;
+    grid-column: 2;
+}
+#recep-info {
+  grid-column: 1;
+  grid-row: 1;
+}
 }
