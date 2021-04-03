@@ -32,15 +32,20 @@ nav {
   grid-template-columns: auto;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin: 0 auto;
 }
-
+#navigation li:first-child {
+    display: block;
+}
+#navigation li {
+    display: none;
+}
 ul {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
 
 li {
@@ -99,6 +104,9 @@ ul li ul li {
 .dropdown {
   margin-left: 20px;
 }
+#navigation.responsive li {
+    display: block;
+}
 
 /* main css */
 main {
@@ -153,7 +161,7 @@ footer, footer a {
     color: #F8F4F1;
 }
 @media only screen and (min-width: 34.5em){ 
-      nav {
+    nav {
         max-width: 100%;
     }
     #navigation {
@@ -162,6 +170,20 @@ footer, footer a {
     #navigation li {
         display: block;
     }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus {
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display: none;
+    }
+    ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -171,6 +193,14 @@ footer, footer a {
         width: 800px;
         margin-left: 400px;
      }
+     ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
   .content {
         max-width: 1040px;
         margin: 0 auto;
