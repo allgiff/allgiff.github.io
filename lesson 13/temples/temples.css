@@ -26,6 +26,11 @@ nav {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 ul {
@@ -129,7 +134,16 @@ footer, footer a {
     color: #F8F4F1;
 }
 @media only screen and (min-width: 34.5em){ 
-      .cards {
+            nav {
+        max-width: 100%;
+    }
+    #navigation {
+        grid-template-columns: repeat(7,auto);
+    }
+    #navigation li {
+        display: block;
+    }
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
 }
     #temples {
@@ -138,7 +152,11 @@ footer, footer a {
 }
 
 @media only screen and (min-width: 54.5em){ 
-    .content {
+         #navigation {
+        width: 800px;
+        margin-left: 400px;
+     }
+  .content {
         max-width: 850px;
         margin: 0 auto;
     }
