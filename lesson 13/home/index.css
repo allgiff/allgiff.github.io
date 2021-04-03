@@ -101,9 +101,6 @@ ul li ul li {
     font-weight: 700;
     color: #F8F4F1;
 }
-.dropdown {
-  margin-left: 20px;
-}
 #navigation.responsive li {
     display: block;
 }
