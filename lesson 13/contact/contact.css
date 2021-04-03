@@ -180,6 +180,8 @@ footer, footer a {
     }
     .ham {
         display: none;
+        padding: 0;
+        margin: 0;
     }
     ul {
   padding: 0;
@@ -187,7 +189,7 @@ footer, footer a {
   margin-bottom: 20px;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
 }
 }
 
@@ -198,7 +200,7 @@ footer, footer a {
     }
      #navigation {
         width: 800px;
-        margin-left: 400px;
+        margin-left: 350px;
      }
      ul {
   padding: 0;
@@ -206,7 +208,7 @@ footer, footer a {
   margin-bottom: 20px;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
 }
     main {
     grid-template-columns: 1fr 1fr;
