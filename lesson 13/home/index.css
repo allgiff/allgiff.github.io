@@ -181,8 +181,14 @@ footer, footer a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+
+.card1, .card2, .card3 {
+    display: grid;
+	  grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+.info {
+  padding: 10px;
 }
 }
 @media only screen and (min-width: 54.5em){ 
@@ -205,5 +211,22 @@ footer, footer a {
     .cards {
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+  .homeImg {
+    grid-row: 1;
+    width: 337px;
+    padding: 0;
+  }
+  .info {
+    grid-row: 2;
+    padding: 0;
+    padding-top: 5px;
+  }
+  #info1 {
+    margin-top: -40px;
+    padding-top: 0;
+  }
+  #img1 {
+    margin: 0;
+    padding: 0;
+  }
 }
