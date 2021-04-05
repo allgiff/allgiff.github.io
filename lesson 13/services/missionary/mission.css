@@ -114,11 +114,8 @@ main {
   padding-right: 20px;
     padding-bottom: 100px;
 }
-.content{
-
-}
-#suites {
-
+form {
+  font-family: 'Source Sans Pro';
 }
 #suites-img {
   padding: 10px;
