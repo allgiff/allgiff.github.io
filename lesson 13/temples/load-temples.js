@@ -22,10 +22,12 @@ function buildTempleCard(temple,i) {
     card.innerHTML = `<h2>${temple.name}</h2>
                           <img src="${temple.imageurl}" alt="${temple.name}">
                           <p><b>Address:</b><br>${temple.address1}<br>${temple.city}, ${temple.state}</p>
-                          <p><b>Telephone:</b><br>${temple.phone}</p>
+                          <p><b>Phone:</b><br>${temple.phone}</p>
+                          <p><b>Email:</b><br>${temple.email}</p>
                           <p><b>Services:</b><br>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</p>
                           <p><b>Closures:</b><br>${temple.closures[0]}<br>${temple.closures[1]}<br>${temple.closures[2]}<br>${temple.closures[3]}</p>
                           <p><b>Schedule:</b><br>${temple.schedule}</p>
+                          <p><b>History:</b><br>${temple.history}</p>
                           
                           <h3 class="hero-title">Weather</h3>
                           <img src="" class="weather-report1" id="img${i}"${temple.id}></p>
