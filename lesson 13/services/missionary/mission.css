@@ -231,4 +231,8 @@ footer, footer a {
 #suites-img {
   padding-right: 10px;
 }
+h2 {
+  text-align: left;
+  margin-top: 0;
+}
 }
