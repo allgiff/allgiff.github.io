@@ -119,6 +119,9 @@ form {
 #suites-img {
   width: 100%;
 }
+#suites {
+    color: #4a4e69;
+}
 /* contact form */
 h2 {
   font-family: 'Lora', serif;

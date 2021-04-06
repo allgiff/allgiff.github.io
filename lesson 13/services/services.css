@@ -8,7 +8,6 @@ h1, h2 {
 }
 p {
     font-family: 'Source Sans Pro';
-    color: #4a4e69;
 }
 /* css for header & logo */
 header {
@@ -115,17 +114,29 @@ main {
   .content {
     margin: 0 auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
 #amen {
   border: 3px solid #4a4e69;
   border-radius: 10%;
   padding: 10px;
+  color: #4a4e69;
 }
 #serv{
   border: 3px solid #4a4e69;
   border-radius: 10%;
   padding: 10px;
+  padding-bottom: 15px;
+  color: #4a4e69;
+}
+#banner-img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 15px;
 }
 /* css for footer */
 footer {    
@@ -180,11 +191,14 @@ footer, footer a {
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
   .content {
-        max-width: 900px;
-    }
-    main {
+      max-width: 900px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
+    #banner-img {
+      width: 850px;
+      margin: 0 auto;
+    }
+
 }
