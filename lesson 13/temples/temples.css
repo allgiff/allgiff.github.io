@@ -134,7 +134,9 @@ main {
     font-family: 'Lora', serif;
     color: #4a4e69;
 }
-
+#weather {
+  color: #9a8c98;
+}
 /* css for footer */
 footer {    
     background-color: #4a4e69;
