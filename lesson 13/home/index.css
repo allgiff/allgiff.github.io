@@ -25,7 +25,6 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #4a4e69;
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   list-style: none;
   padding: 0;
@@ -191,11 +190,14 @@ footer, footer a {
 .info {
   padding: 10px;
 }
+#navigation .ham {
+    display: none;
+}
 }
 @media only screen and (min-width: 54.5em){ 
      #navigation {
         width: 800px;
-        margin-left: 350px;
+        margin: 0 auto;
      }
      ul {
   padding: 0;
@@ -229,4 +231,7 @@ footer, footer a {
     margin: 0;
     padding: 0;
   }
+#navigation .ham {
+    display: none;
+}
 }
