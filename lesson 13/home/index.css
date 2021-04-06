@@ -116,15 +116,14 @@ position:relative;
 width: 100%;
 }
 button {
-background-color:#F2e9e4;
+background-color:#9a8c98;
 border-radius:1.5em;
 border: none;
 margin: 0 auto;
 position: absolute;
 bottom:4em;
 left:4em;
-color: #4a4e69;
-text-transform: uppercase;
+color: #fff;
 padding:1em 1.5em;
 text-decoration: none;
 font-family: 'Source Sans Pro', sans-serif;
@@ -132,7 +131,8 @@ cursor: pointer;
 width: 160px;
 height: 60px;
 font-weight: bold;
-border: 3px solid #4a4e69;
+border: 3px solid #F8F4F1;
+font-size: 1.1em;
 }
 
 .cards {
