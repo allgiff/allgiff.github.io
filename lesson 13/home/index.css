@@ -145,6 +145,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .info {
   text-align: left;
   color: #4a4e69;
+  font-size: 1.1em;
 }
 
 /* css for footer */
@@ -221,7 +222,7 @@ footer, footer a {
     padding-top: 5px;
   }
   #info1 {
-    margin-top: -40px;
+    margin-top: -55px;
     padding-top: 0;
   }
   #img1 {

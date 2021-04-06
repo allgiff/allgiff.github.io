@@ -124,6 +124,7 @@ main {
   border-radius: 10%;
   padding: 10px;
   color: #4a4e69;
+    font-size: 1.1em;
 }
 #serv{
   border: 3px solid #4a4e69;
@@ -131,6 +132,7 @@ main {
   padding: 10px;
   padding-bottom: 15px;
   color: #4a4e69;
+    font-size: 1.1em;
 }
 #banner-img {
   width: 100%;
