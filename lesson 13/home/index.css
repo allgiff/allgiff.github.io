@@ -181,7 +181,6 @@ footer, footer a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
 }
-
 .card1, .card2, .card3 {
     display: grid;
 	  grid-template-columns: 1fr 1fr;
@@ -189,9 +188,6 @@ footer, footer a {
 }
 .info {
   padding: 10px;
-}
-#navigation .ham {
-    display: none;
 }
 }
 @media only screen and (min-width: 54.5em){ 
@@ -231,7 +227,4 @@ footer, footer a {
     margin: 0;
     padding: 0;
   }
-#navigation .ham {
-    display: none;
-}
 }
