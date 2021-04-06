@@ -121,14 +121,14 @@ main {
 
 #amen {
   border: 3px solid #4a4e69;
-  border-radius: 10%;
+  border-radius: 5%;
   padding: 10px;
   color: #4a4e69;
     font-size: 1.1em;
 }
 #serv{
   border: 3px solid #4a4e69;
-  border-radius: 10%;
+  border-radius: 5%;
   padding: 10px;
   padding-bottom: 15px;
   color: #4a4e69;

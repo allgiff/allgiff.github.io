@@ -115,18 +115,24 @@ display:inline-block;
 position:relative;
 width: 100%;
 }
-
-.button-container a{
+button {
+background-color:#F2e9e4;
+border-radius:1.5em;
+border: none;
+margin: 0 auto;
 position: absolute;
 bottom:4em;
 left:4em;
-background-color:#4a4e69;
-border-radius:1.5em;
-color: #F8F4F1;
+color: #4a4e69;
 text-transform: uppercase;
 padding:1em 1.5em;
 text-decoration: none;
 font-family: 'Source Sans Pro', sans-serif;
+cursor: pointer;
+width: 160px;
+height: 60px;
+font-weight: bold;
+border: 3px solid #4a4e69;
 }
 
 .cards {
@@ -145,7 +151,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .info {
   text-align: left;
   color: #4a4e69;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* css for footer */
@@ -218,12 +224,16 @@ footer, footer a {
   }
   .info {
     grid-row: 2;
-    padding: 0;
-    padding-top: 5px;
   }
   #info1 {
-    margin-top: -55px;
+    padding-top: 5px;
+  }
+    #info2 {
+    padding-top: 5px;
+  }
+    #info3 {
     padding-top: 0;
+    margin-top: 0;
   }
   #img1 {
     margin: 0;
