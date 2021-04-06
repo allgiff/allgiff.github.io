@@ -25,13 +25,13 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #4a4e69;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
   list-style: none;
   padding: 0;
   grid-template-columns: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin: 0 auto;
 }
 #navigation li:first-child {
     display: block;

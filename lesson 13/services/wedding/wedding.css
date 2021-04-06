@@ -32,7 +32,6 @@ nav {
   grid-template-columns: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin: 0 auto;
 }
 #navigation li:first-child {
     display: block;
@@ -119,7 +118,6 @@ main {
   padding: 10px;
 }
 #recp-img {
-  padding: 10px;
   width: 100%;
 }
 /* css for footer */
