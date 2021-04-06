@@ -216,7 +216,7 @@ footer, footer a {
     }
      #navigation {
         width: 800px;
-        margin-left: 350px;
+        margin: 0 auto;
      }
      ul {
   padding: 0;
