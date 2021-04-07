@@ -31,7 +31,7 @@ nav {
   padding: 0;
   grid-template-columns: auto;
   margin-top: 15px;
-  margin-bottom: 15px;
+   margin-bottom: 30px;
 }
 #navigation li:first-child {
     display: block;
