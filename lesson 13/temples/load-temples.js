@@ -20,19 +20,23 @@ function buildTempleCard(temple,i) {
     let card = document.createElement("section");
     card.classList.add("templecard");
     card.innerHTML = `<h2>${temple.name}</h2>
+                          <div id="info">
                           <img src="${temple.imageurl}" alt="${temple.name}">
                           <p><b>Address:</b><br>${temple.address1}<br>${temple.city}, ${temple.state}</p>
                           <p><b>Phone:</b><br>${temple.phone}</p>
                           <p><b>Email:</b><br>${temple.email}</p>
                           <p><b>Services:</b><br>${temple.services[0]}<br>${temple.services[1]}<br>${temple.services[2]}<br>${temple.services[3]}</p>
                           <p><b>Closures:</b><br>${temple.closures[0]}<br>${temple.closures[1]}<br>${temple.closures[2]}<br>${temple.closures[3]}</p>
-                          <p><b>Schedule:</b><br>${temple.schedule}</p>
-                          <p><b>History:</b><br>${temple.history}</p>
+                          <p id="sched"><b>Schedule:</b><br>${temple.schedule}</p>
+                          <hr>
+                          <p id="hist"><br>${temple.history}</p>
+                          </div>
                           
+                          <div id="weather">
                           <h3 class="hero-title">Weather</h3>
                           <img src="" class="weather-report1" id="img${i}"${temple.id}></p>
                           <p>Current Weather: <strong><span id="condition${i}"${temple.id}></span></strong></p>
-                          <p>Temperature: <strong><span id="temp${i}"${temple.id}></span>&#176; F</strong></p>`;
+                          <p>Temperature: <strong><span id="temp${i}"${temple.id}></span>&#176; F</strong></p></div>`;
     
     document.querySelector("#temples").appendChild(card);
 }

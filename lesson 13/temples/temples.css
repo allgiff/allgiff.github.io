@@ -124,18 +124,34 @@ main {
     gap: 10px;
     grid-template-columns: 1fr;
 }
-#temples p {
+#temples #info {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     color: #4a4e69;
       font-size: 1.1em;
 }
-#temples h2, h1, h3, h4, h5 {
+#temples h2, h1, h4, h5 {
     font-family: 'Lora', serif;
     color: #4a4e69;
 }
 #weather {
   color: #9a8c98;
+}
+hr {
+  width: 100px;
+  background-color: #9a8c98;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+h3 {
+  font-family: 'Source Sans Pro';
+}
+#hist {
+  padding-top: 0;
+  margin-top: 0;
+}
+#sched {
+  padding-bottom: 5px;
 }
 /* css for footer */
 footer {    
