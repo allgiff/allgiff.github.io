@@ -1,32 +1,21 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-    fetch(requestURL)
-        .then((response) => response.json())
-        .then((jsonObject) => {
-            console.table(jsonObject);  // temporary checking for valid response and data parsing
-            const towns = jsonObject['towns'];
-            /* Preston */
-            let card = document.createElement('section');
-            let h2 = document.createElement('h2');
-            h2.textContent = towns[6].name
-            card.appendChild(h2);
-            document.querySelector('div.card1').appendChild(card);
+let weeks = ['Week 1 Notes', 'Week 2'];
+let links = ['http://google.com'];
 
-            let founded = document.createElement('p');
-            founded.textContent = "Year Founded: " + towns[6].yearFounded;
-            card.appendChild(founded);
 
-            let population = document.createElement('p');
-            population.textContent = "Current Population: " + towns[6].currentPopulation;
-            card.appendChild(population);
+let list = document.getElementById("myList");
 
-            let rain = document.createElement('p');
-            rain.textContent = "Average Yearly Rainfall: " + towns[6].averageRainfall + " inches";
-            card.appendChild(rain);
 
-            let cardimg = document.createElement('section');
-            let image = document.createElement('img');
-            cardimg.classList.add('one');
-            image.setAttribute('src', 'images/' + towns[6].photo);
-            cardimg.appendChild(image)
-            document.querySelector('div.card1').appendChild(cardimg);
-        });
+weeks.forEach((item) => {
+    let li = document.createElement("li");
+    li.setAttribute('id', 'item');
+    list.appendChild(li);
+    console.log(item);
+});
+
+    let item = document.getElementById("item");
+    let a = document.createElement('a');
+    let linkText = document.createTextNode(weeks[0]);
+    a.appendChild(linkText);
+    a.title = weeks[0];
+    a.href = links[0];
+    item.appendChild(a);
