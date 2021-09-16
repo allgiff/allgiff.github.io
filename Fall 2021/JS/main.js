@@ -1,21 +1,24 @@
-let weeks = ['Week 1 Notes', 'Week 2'];
-let links = ['http://google.com'];
+var options = [
+    weeks = ['Week 1', 'Week 2', 'Week 3'],
+    links = ['week1notes.html', 'https://google.com']
+];
 
+function makeUL(options) {
+    let list = document.createElement('ul');
 
-let list = document.getElementById("myList");
+    for (let i = 0; i < options.length; i++) {
+        var item = document.createElement('li');
 
+        item.appendChild(document.createTextNode(weeks[i]));
 
-weeks.forEach((item) => {
-    let li = document.createElement("li");
-    li.setAttribute('id', 'item');
-    list.appendChild(li);
-    console.log(item);
-});
+        list.appendChild(item);
 
-    let item = document.getElementById("item");
-    let a = document.createElement('a');
-    let linkText = document.createTextNode(weeks[0]);
-    a.appendChild(linkText);
-    a.title = weeks[0];
-    a.href = links[0];
-    item.appendChild(a);
+        var tag = document.createElement('a');
+
+        tag.appendChild(document.createTextNode(links[i]));
+
+        item.appendChild(tag);
+    }
+    return list;
+}
+document.getElementById('myList').appendChild(makeUL(options[0]));

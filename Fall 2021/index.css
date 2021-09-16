@@ -3,14 +3,14 @@
         html {
             margin: 0 auto;
             background-color: powderblue;
-            height: 100%;
-            padding-bottom: 30px;
+            padding-bottom: 40px;
         }
         body {
             background-color: antiquewhite;
             width: 950px;
             margin: 0 auto;
             height: 100%;
+            border-radius: 3%;
         }
         h1 { font-family: 'Source Serif Pro', serif;
             padding: 10px;
@@ -33,7 +33,19 @@
             padding: 10px;
             padding-top: 0px;
         }
-
-        @media screen and (min-width: 480px) {
+        a {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 0px 0px 20px 20px;
+        }
+        a:link {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: powderblue;
+        }
+        @media screen and (min-width: 1000px) {
             
         }
