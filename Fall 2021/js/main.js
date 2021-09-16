@@ -10,20 +10,13 @@ function makeUL(options) {
 
     for (let i = 0; i < options.length; i++) {
         var li = document.createElement('li');
-
-        li.appendChild(document.createTextNode(options[i].label));
-
-        list.appendChild(li);
-
         var a = document.createElement('a');
-
-        var link = document.createTextNode(li);
-
-        a.appendChild(link);
-
         a.href = options[i].url;
-
-        list.appendChild(a);
+        var link = document.createTextNode(options[i].label);
+        a.appendChild(link);
+        li.appendChild(a);
+        list.appendChild(li);
+    }
     }
     return list;
 } makeUL(options);
