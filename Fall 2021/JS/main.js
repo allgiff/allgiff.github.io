@@ -26,4 +26,4 @@ function makeUL(options) {
         list.appendChild(a);
     }
     return list;
-}
+} makeUL(options);
