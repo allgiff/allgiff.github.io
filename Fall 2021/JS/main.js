@@ -1,24 +1,29 @@
-var options = [
-    weeks = ['Week 1', 'Week 2', 'Week 3'],
-    links = ['week1notes.html', 'https://google.com']
-];
+const options = [
+    {
+        label: "Week1 notes",
+        url: "https://allgiff.github.io/Fall%202021/week1notes.html"
+    }
+]
 
 function makeUL(options) {
-    let list = document.createElement('ul');
+    let list = document.getElementById('myList');
 
     for (let i = 0; i < options.length; i++) {
-        var item = document.createElement('li');
+        var li = document.createElement('li');
 
-        item.appendChild(document.createTextNode(weeks[i]));
+        li.appendChild(document.createTextNode(options[i].label));
 
-        list.appendChild(item);
+        list.appendChild(li);
 
-        var tag = document.createElement('a');
+        var a = document.createElement('a');
 
-        tag.appendChild(document.createTextNode(links[i]));
+        var link = document.createTextNode(li);
 
-        item.appendChild(tag);
+        a.appendChild(link);
+
+        a.href = options[i].url;
+
+        list.appendChild(a);
     }
     return list;
 }
-document.getElementById('myList').appendChild(makeUL(options[0]));
