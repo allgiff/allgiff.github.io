@@ -19,3 +19,4 @@ function makeUL(optioms) {
     }
     return list;
 }
+makeUL(options);
