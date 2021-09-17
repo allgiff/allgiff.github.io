@@ -8,7 +8,7 @@ const options = [
 function makeUL(optioms) {
     let list = document.getElementById('myList');
 
-    for (let i = 0; i < optioms.length; i++) {
+    for (let i = 0; i < options.length; i++) {
         var li = document.createElement('li');
         var a = document.createElement('a');
         a.href = options[i].url;
