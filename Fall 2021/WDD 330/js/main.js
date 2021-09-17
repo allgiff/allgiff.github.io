@@ -1,11 +1,11 @@
 const options = [
     {
         label: "Week1 notes",
-        url: "https://allgiff.github.io/Fall%202021/week1notes.html"
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/week1notes.html"
     }
 ]
  
-function makeUL(optioms) {
+function makeUL(options) {
     let list = document.getElementById('myList');
 
     for (let i = 0; i < options.length; i++) {
