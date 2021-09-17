@@ -4,11 +4,11 @@ const options = [
         url: "https://allgiff.github.io/Fall%202021/week1notes.html"
     }
 ]
-
-function makeUL(options) {
+ 
+function makeUL(optioms) {
     let list = document.getElementById('myList');
 
-    for (let i = 0; i < options.length; i++) {
+    for (let i = 0; i < optioms.length; i++) {
         var li = document.createElement('li');
         var a = document.createElement('a');
         a.href = options[i].url;
@@ -17,6 +17,5 @@ function makeUL(options) {
         li.appendChild(a);
         list.appendChild(li);
     }
-    }
     return list;
-} makeUL(options);
+}
