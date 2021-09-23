@@ -3,7 +3,7 @@ const options = [
         label: "Week 1 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/week1notes.html",
         label: "Week 2 notes",
-        url: "week2/week2notes.html"
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%202/week2notes.html"
     }
 ]
  
