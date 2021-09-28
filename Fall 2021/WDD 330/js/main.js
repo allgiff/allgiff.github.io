@@ -5,6 +5,9 @@ const options = [
     },{
         label: "Week 2 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%202/week2notes.html"
+    }, {
+        label: "Week 3 notes",
+        url: ""
     }
 ]
  
