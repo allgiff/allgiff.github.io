@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Week 3 Notes</h1>
-    <a href="#">Practice Exercises</a>
+    <a href="events.html">Practice Exercises</a>
     <ul>
         <li>Objects: Represent entities in the real world (users, orders, etc.)</li>
         <li>User actions (login, shopping cart) are represented by functions in properties in JavaScript</li>
@@ -78,8 +78,19 @@
             <li>removeChild(): used to remove an element from a page</li>
             <li>replaceChild(): used to replace one node with another</li>
             <li>innerHTML: returns all the child elements of an element as a string of HTML</li>
-            <li></li>
         </ol>
+        <li>Event Listens: Trigger during a specified event</li>
+        <li>Whenever an event handler is triggered by an event, the callback function is called. This function is automatically passed an event object as a parameter that contains information about the event.</li>
+        <li>Type: returns the type of event that occured (click, etc.)</li>
+        <li>screenX and screenY: show the number of pixels from the left and top of the screen where the event took place</li>
+        <li>clientX and clientY: show the number of pixels from the left and top of the client that is being used (browser window)</li>
+        <li>pageX and pageY: show the number of pixels from the left and top where the event took place in the document</li>
+        <li>removeEventListener(): method that removes an event listener</li>
+        <li>preventDefault(): method that stops the default behavior</li>
+        <li>Event propagation: order that the events fire on each element</li>
+        <li>Bubbling: When event fires then bubbles up the document tree</li>
+        <li>Capturing: starts on the root element then propagates downwards</li>
+        <li>event.stopPropagation(): stops bubbling</li>
     </ul>
 </body>
 </html>
