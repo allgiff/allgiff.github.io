@@ -1,26 +1,30 @@
 //colors
 $body-background-color: darkred;
-$form-background-color: white;
+$form-background-color: blue;
 $input-color: white;
 $headlines-color : white;
+$break-small: 20em;
 
 body {
-     background-color: $body-background-color;          
+    background-color: $body-background-color;
 }
 
 #contactform {
     background-color: $form-background-color;
-    input, textarea {
+
+    input,
+    textarea {
         background-color: $input-color;
         flex: 2;
     }
+
     @media (min-width: $break-small) {
-       & {
-          width: 90%;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto; 
-        } 
+        & {
+            width: 90%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -33,6 +37,7 @@ body {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
-fieldset > div {
-    @include flex-container;        
+
+fieldset>div {
+    @include flex-container;
 }

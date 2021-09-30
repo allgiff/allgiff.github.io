@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/*Variables*/
+$primary-color: #FAEBD7;
+$secondary-color: #6495ED;
+$accent-color: #DEB887;
+$article-background-color: white;
+$header-font: 'Lora', serif;
+$body-font: Helvetica, Arial, sans-serif;
+$visited-link-color: black;
+$date-color: gray;
+
+/*Mixin*/
+@mixin decorate {
+    text-decoration: none;
+}
+
+html {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+body {
+    font-family: $body-font;
+    margin: 0 auto;
+    background-color: $primary-color;
+}
+/* nesting */
+header {
+    color: $primary-color;
+    text-align: right;
+    @include decorate;
+    background-color: $secondary-color;
+    padding: 10px;
+    a:link {
+        color: $accent-color;
+        @include decorate;
+    }
+
+    a:hover {
+        color: $article-background-color;
+        @include decorate;
+    }
+
+    a:visited {
+        color: $primary-color;
+        @include decorate;
+    }
+}
+
+hr {
+    width: 75%;
+    align-items: right;
+    margin-right: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    padding: 5%;
+}
+
+body h2 {
+    padding: 5%;
+    padding-top: 0;
+}
+
+article {
+    background-color: $article-background-color;
+    margin: 5%;
+    box-shadow: 5px 5px 10px lightgray;
+    padding: 5px;
+    a:hover {
+        color: $secondary-color;
+        @include decorate;
+    }
+    a:link {
+        color: $accent-color;
+        @include decorate;
+    }
+    a:visited {
+        color: $visited-link-color;
+        @include decorate;
+    }
+}
+
+.post-date {
+    color: $date-color;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+img {
+    width: 90%;
+}
+
+@media screen and (min-width: 1000px) {
+    body div {
+        display: flex;
+    }
+
+    img {
+        width: 30%;
+    }
+}
