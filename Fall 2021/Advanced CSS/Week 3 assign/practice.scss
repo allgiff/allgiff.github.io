@@ -9,9 +9,12 @@ $body-font: Helvetica, Arial, sans-serif;
 $visited-link-color: black;
 $date-color: gray;
 
-/*Mixin*/
+/*Mixins*/
 @mixin decorate {
     text-decoration: none;
+}
+@mixin pads {
+    padding: 5%;
 }
 
 html {
@@ -61,11 +64,11 @@ ul {
 }
 
 p {
-    padding: 5%;
+    @include pads;
 }
 
 body h2 {
-    padding: 5%;
+    @include pads;
     padding-top: 0;
 }
 
@@ -73,7 +76,7 @@ article {
     background-color: $article-background-color;
     margin: 5%;
     box-shadow: 5px 5px 10px lightgray;
-    padding: 5px;
+    @include pads;
     a:hover {
         color: $secondary-color;
         @include decorate;
@@ -90,7 +93,7 @@ article {
 
 .post-date {
     color: $date-color;
-    padding: 5%;
+    @include pads;
     padding-bottom: 0;
 }
 
