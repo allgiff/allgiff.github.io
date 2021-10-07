@@ -8,7 +8,11 @@ const options = [
     }, {
         label: "Week 3 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%203/week3notes.html"
+    }, {
+        label: "Week 4 notes",
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%204/week4notes.html"
     }
+
 ]
  
 function makeUL(options) {
