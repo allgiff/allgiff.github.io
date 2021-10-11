@@ -11,6 +11,9 @@ const options = [
     }, {
         label: "Week 4 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%204/week4notes.html"
+    }, {
+        label: "Week 5 notes",
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%205/week5notes.html"
     }
 
 ]
