@@ -19,7 +19,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Add a checkmark when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -54,7 +54,11 @@ function newElement() {
   }
 }
 
-function filterToDo() {
-  const toDos = toDoInput.childNodes;
-  
+const get_list_items = () => {
+  const lis = document.getElementById('toDo').getElementsByTagName('li');
+    
+  // Loop through the NodeList object. 
+  for (let i = 0; i <= lis.length - 1; i++) {
+    console.log(lis[i]);
+  }
 }
