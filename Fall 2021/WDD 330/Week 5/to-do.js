@@ -27,7 +27,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Create a new list item when clicking on the add button
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("input").value;
@@ -56,29 +56,5 @@ function newElement() {
 
 function filterToDo() {
   const toDos = toDoInput.childNodes;
-  toDos.forEach(function (toDo) {
-    switch (e.target.value) {
-      case "all":
-        toDo.style.display = 'flex';
-        break;
-      
-      case "completed":
-        if (toDo.classList.contains('completed')) {
-          toDo.style.display = 'flex';
-        }
-        else {
-          toDo.style.display = 'none';
-        }
-        break;
-      
-      case "active":
-        if (!toDo.classList.contains('active')) {
-          toDo.style.display = "flex";
-        }
-        else {
-          toDo.style.display = 'none';
-        }
-        break;
-    }
-  });
+  
 }
