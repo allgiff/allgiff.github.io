@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    max-width: 25%;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -128,4 +127,18 @@ input {
 
 .addBtn:hover {
     background-color: #bbb;
+}
+
+#none {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        max-width: 25%;
+    }
+
+    li {
+        list-style-type: none;
+    }
 }
