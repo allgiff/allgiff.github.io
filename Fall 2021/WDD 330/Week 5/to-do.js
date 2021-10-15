@@ -76,6 +76,7 @@ function filterItems() {
   else {
     //show only the unchecked items
   }
+
 }
 
 
