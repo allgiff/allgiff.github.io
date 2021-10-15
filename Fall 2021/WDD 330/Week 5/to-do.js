@@ -1,5 +1,7 @@
+//event listener for local storage retreival
 document.addEventListener('DOMContentLoaded', getToDos);
 
+//item creation functions
 
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -16,10 +18,11 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
+  (function (index) {
+    close[i].onclick = function () {
+      removeLocalToDos(index, this.parentElement);
+    }
+  })(i);
 }
 
 // Add a "checked" symbol when clicking on a list item
@@ -43,7 +46,7 @@ function newElement() {
   }
   document.getElementById("input").value = "";
 
-  //add to local storage
+  //call function and add item to local storage
   saveLocalToDo(inputValue);
 
   var span = document.createElement("SPAN");
@@ -53,12 +56,26 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+      (function (index) {
+    close[i].onclick = function () {
+      removeLocalToDos(index, this.parentElement);
     }
+  })(i);
   }
-  removeLocalToDos(todo);
+}
+
+
+
+
+//functions for filtering the items based on completion
+
+function filterItems() {
+  if (document.getElementsByClassName('checked') === true) {
+    //display only the checked items
+  }
+  else {
+    //show only the unchecked items
+  }
 }
 
 
@@ -91,14 +108,12 @@ function getToDos() {
   else {
     toDos = JSON.parse(localStorage.getItem('toDos'));
   }
-
   toDos.forEach(function (todo) {
       var li = document.createElement("li");
   var inputValue = todo;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-
   }
   else {
     document.getElementById("toDo").appendChild(li);
@@ -112,10 +127,11 @@ function getToDos() {
   li.appendChild(span);
 
     for (i = 0; i < close.length; i++) {
-      close[i].onclick = function () {
-        var div = this.parentElement;
-        div.style.display = "none";
-      }
+  (function (index) {
+    close[i].onclick = function () {
+      removeLocalToDos(index, this.parentElement);
+    }
+  })(i);
     }
     // Add a checkmark when clicking on a list item
 var list = document.querySelector('ul');
@@ -128,13 +144,13 @@ list.addEventListener('click', function(ev) {
 }
 
 //remove an item from storage after it has been deleted from list
-function removeLocalToDos(todo) {
+function removeLocalToDos(i, element) {
+  let toDos = [];
     //check if there are to-dos in the storage 
-  if (localStorage.getItem('todo') === null) {
-    todo = [];
+  if (localStorage.getItem('toDos') !== null) {
+   toDos = JSON.parse(localStorage.getItem('toDos'));
   }
-  else {
-    todo = JSON.parse(localStorage.getItem('todo'));
-  }
-  console.log(todo);
+  toDos.splice(i, 1);
+  localStorage.setItem('toDos', JSON.stringify(toDos));
+  element.remove();
 }

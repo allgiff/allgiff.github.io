@@ -13,14 +13,12 @@
 <ul id="toDo">
 
 </ul>
-<div>
-    <nav>
-        <li>Tasks Left</li>
-        <li class="selected">All</li>
-        <li>Active</li>
-        <li>Completed</li>
-    </nav>
-</div>
+    <footer>
+        <span class="pendStyle"><span class="pendingTasks"></span> tasks left</span>
+        <button class="selected" onclick="allItems()">All</button>
+        <button id="complete" onclick="filterItems()">Active</button>
+        <button id="complete" onclick="filterItems()">Completed</button>
+    </footer>
 <div id="addItem" class="header">
   <input type="text" id="input" placeholder="New Task...">
   <span onclick="newElement()" class="addBtn">Add</span>
