@@ -65,16 +65,16 @@ function newElement() {
 }
 
 
-
-
 //functions for filtering the items based on completion
 
 function filterItems() {
-  if (document.getElementsByClassName('checked') === true) {
-    //display only the checked items
+  let markedItem = document.getElementsByClassName('checked');
+  if (markedItem === true) {
+    //show only the unchecked items
+    style.visibility = none;
   }
   else {
-    //show only the unchecked items
+    
   }
 
 }
