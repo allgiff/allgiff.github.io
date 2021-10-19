@@ -80,8 +80,6 @@ function filterItems() {
 }
 
 
-
-
 //functions for local storage
 
 //save to local storage
@@ -142,6 +140,8 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
   });
+  //call the tasksLeft function to determine how many items are left
+  tasksLeft();
 }
 
 //remove an item from storage after it has been deleted from list
@@ -154,4 +154,18 @@ function removeLocalToDos(i, element) {
   toDos.splice(i, 1);
   localStorage.setItem('toDos', JSON.stringify(toDos));
   element.remove();
+  tasksLeft();
+}
+
+//show how many tasks are left
+function tasksLeft() {
+  let toDos = [];
+    //check if there are to-dos in the storage, which finds the number of tasks
+  if (localStorage.getItem('toDos') !== null) {
+   toDos = JSON.parse(localStorage.getItem('toDos'));
+  }
+  //use the array length to show the amount of items in the local storage array
+  let ugh = toDos.length;
+  var div = document.getElementById('pendingTasks');
+  div.innerHTML += ugh;
 }
