@@ -94,7 +94,7 @@ function saveLocalToDo(toDo) {
     toDos = JSON.parse(localStorage.getItem('toDos'));
   }
   let toDoData = {
-    contents: toDo, checked: false //teacher had me add this. idk what to do with it
+    contents: toDo, checked: false 
   };
   //put the todos into the list
   toDos.push(toDo);
