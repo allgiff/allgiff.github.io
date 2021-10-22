@@ -62,22 +62,23 @@ function newElement() {
     }
   })(i);
   }
+  filterItems();
 }
 
 
 //functions for filtering the items based on completion
 
 function filterItems() {
-  let markedItem = document.getElementsByClassName('checked');
-  if (markedItem === true) {
-    //show only the unchecked items
-    style.visibility = none;
-  }
-  else {
-    
-  }
-
+  document.querySelector(".sort").addEventListener('click', function (e) {
+    const id = e.target.id;
+    if (id) {
+      document.querySelector(".selected").classList.remove("selected");
+      document.getElementById(id).classList.add("selected");
+      document.querySelector(".checked").className= `checked ${className}`;
+    }
+  });
 }
+  
 
 
 //functions for local storage
@@ -92,9 +93,14 @@ function saveLocalToDo(toDo) {
   else {
     toDos = JSON.parse(localStorage.getItem('toDos'));
   }
+  let toDoData = {
+    contents: toDo, checked: false //teacher had me add this. idk what to do with it
+  };
   //put the todos into the list
   toDos.push(toDo);
   localStorage.setItem('toDos', JSON.stringify(toDos));
+  tasksLeft(toDos);
+  filterItems();
 }
 
 //add items back onto list
@@ -141,7 +147,8 @@ list.addEventListener('click', function(ev) {
 }, false);
   });
   //call the tasksLeft function to determine how many items are left
-  tasksLeft();
+  tasksLeft(toDos);
+  filterItems();
 }
 
 //remove an item from storage after it has been deleted from list
@@ -154,18 +161,14 @@ function removeLocalToDos(i, element) {
   toDos.splice(i, 1);
   localStorage.setItem('toDos', JSON.stringify(toDos));
   element.remove();
-  tasksLeft();
+  tasksLeft(toDos);
+  filterItems();
 }
 
 //show how many tasks are left
-function tasksLeft() {
-  let toDos = [];
-    //check if there are to-dos in the storage, which finds the number of tasks
-  if (localStorage.getItem('toDos') !== null) {
-   toDos = JSON.parse(localStorage.getItem('toDos'));
-  }
+function tasksLeft(toDos) {
   //use the array length to show the amount of items in the local storage array
-  let ugh = toDos.length;
+  let taskNum = toDos.length;
   var div = document.getElementById('pendingTasks');
-  div.innerHTML += ugh;
+  div.innerHTML = taskNum;
 }

@@ -14,6 +14,9 @@ const options = [
     }, {
         label: "Week 5 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%205/week5notes.html"
+    }, {
+        label: "Week 6 - To-Do List",
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%205/to-do.html"
     }
 
 ]
