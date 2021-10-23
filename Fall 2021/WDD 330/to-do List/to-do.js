@@ -77,9 +77,8 @@ function filterItems() {
       document.getElementById(id).classList.add("selected");
       document.querySelector(".checked").className = `checked ${id}`;
       if (checked === true) {
-        checked.style.visibility = hidden;
+        checked.style.visibility = 'hidden';
       }
-
     }
   });
 }
