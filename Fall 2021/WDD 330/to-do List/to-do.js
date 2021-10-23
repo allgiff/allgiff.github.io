@@ -70,11 +70,16 @@ function newElement() {
 
 function filterItems() {
   document.querySelector(".sort").addEventListener('click', function (e) {
+    let checked = document.getElementsByClassName('checked')
     const id = e.target.id;
     if (id) {
       document.querySelector(".selected").classList.remove("selected");
       document.getElementById(id).classList.add("selected");
-      document.querySelector(".checked").className= `checked ${className}`;
+      document.querySelector(".checked").className = `checked ${id}`;
+      if (checked === true) {
+        checked.style.display = none;
+      }
+      
     }
   });
 }
@@ -94,7 +99,7 @@ function saveLocalToDo(toDo) {
     toDos = JSON.parse(localStorage.getItem('toDos'));
   }
   let toDoData = {
-    contents: toDo, checked: false 
+    contents: toDo, checked: false //teacher had me add this. idk what to do with it
   };
   //put the todos into the list
   toDos.push(toDo);
