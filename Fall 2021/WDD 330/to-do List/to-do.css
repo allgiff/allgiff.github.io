@@ -84,11 +84,11 @@ ul li.checked::before {
     clear: both;
 }
 
-footer {
+.sort {
     background-color: lightsalmon;
 }
 
-footer button {
+.sort button {
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -98,6 +98,16 @@ footer button {
     padding: 10px;
     border: none;
     background-color: lightsalmon;
+}
+
+ul.active li.checked {
+    display: none;
+    /** If the active filter was clicked, hide the completed Todo items. */
+}
+
+ul.checked li:not(.checked) {
+    display: none;
+    /** If the completed filter was clicked, hide the Todo items that are *not* completed/checked.*/
 }
 
 .pendStyle {

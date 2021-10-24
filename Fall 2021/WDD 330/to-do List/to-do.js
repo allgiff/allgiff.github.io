@@ -62,27 +62,17 @@ function newElement() {
     }
   })(i);
   }
-  filterItems();
 }
 
 
 //functions for filtering the items based on completion
-
-function filterItems() {
-  document.querySelector(".sort").addEventListener('click', function (e) {
-    let checked = document.getElementsByClassName('checked')
-    const id = e.target.id;
-    if (id) {
-      document.querySelector(".selected").classList.remove("selected");
-      document.getElementById(id).classList.add("selected");
-      document.querySelector(".checked").className = `checked ${id}`;
-      if (checked === true) {
-        checked.style.visibility = 'hidden';
-      }
-    }
+  // Listen for when a filter button is clicked.
+document.querySelector('.sort, button').addEventListener('click', function (e) {
+    const filter = e.target.id; // Determine which filter button was clicked.
+    const sortList = document.querySelector("#toDo"); // Find the sortList.
+    sortList.classList.remove("all", "active", "checked"); // Remove all curent filters.
+    sortList.classList.add(filter); // Add the new filter to the sort list.
   });
-}
-  
 
 
 //functions for local storage
@@ -104,7 +94,6 @@ function saveLocalToDo(toDo) {
   toDos.push(toDo);
   localStorage.setItem('toDos', JSON.stringify(toDos));
   tasksLeft(toDos);
-  filterItems();
 }
 
 //add items back onto list
@@ -152,7 +141,6 @@ list.addEventListener('click', function(ev) {
   });
   //call the tasksLeft function to determine how many items are left
   tasksLeft(toDos);
-  filterItems();
 }
 
 //remove an item from storage after it has been deleted from list
@@ -166,7 +154,6 @@ function removeLocalToDos(i, element) {
   localStorage.setItem('toDos', JSON.stringify(toDos));
   element.remove();
   tasksLeft(toDos);
-  filterItems();
 }
 
 //show how many tasks are left
