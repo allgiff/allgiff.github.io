@@ -19,7 +19,7 @@ const options = [
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/to-do%20List/to-do.html"
     }, {
         label: "Week 7",
-        url: ""
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%207/week7notes.html"
     }
 
 ]
