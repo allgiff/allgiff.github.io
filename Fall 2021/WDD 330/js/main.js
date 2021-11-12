@@ -23,6 +23,9 @@ const options = [
     }, {
         label: "Week 8 notes",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%208/week8notes.html"
+    }, {
+        label: "Week 9 notes",
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%209/week9notes.html"
     }
 
 ]
