@@ -1,6 +1,6 @@
 "use strict";
 
-var _NotesAPI = _interopRequireDefault(require("NotesAPI.js"));
+var _NotesAPI = _interopRequireDefault(require("./NotesAPI"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
