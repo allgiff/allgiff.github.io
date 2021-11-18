@@ -1016,6 +1016,22 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "BYUI Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0076b6;
+  padding: 0.5em;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #727272;
+}
+
 img {
   max-width: 100%;
 }
@@ -1029,4 +1045,62 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+main span {
+  float: right;
+}
+
+.bannerImg {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.interestBox {
+  margin: 0 auto;
+  border: 1px solid #727272;
+  margin: 1em;
+  max-width: 320px;
+}
+
+.resources {
+  margin: 0 auto;
+  border: 1px solid #727272;
+  margin: 1em;
+  max-width: 320px;
+}
+
+.resources h3 {
+  background-color: #727272;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.resourceLinks {
+  background-color: #f8f9fa;
+}
+
+.resources a {
+  padding: 8px 20px;
+  padding-bottom: 8px;
+}
+
+.importantDates {
+  margin: 0 auto;
+  border: 1px solid #727272;
+  margin: 1em;
+  max-width: 320px;
+}
+
+.importantDates h3 {
+  background-color: #056cb6;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.days {
+  margin: 0;
+  padding: 8px;
 }

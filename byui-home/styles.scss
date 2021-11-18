@@ -19,6 +19,29 @@ $byui-blue: #056cb6;
   box-sizing: border-box;
 }
 
+@mixin blockStyle {
+  margin: 0 auto;
+  border: 1px solid $dark-gray;
+  margin: 1em;
+  max-width: 320px;
+}
+
+html {
+  font-family: 'BYUI Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $link-blue;
+  padding: .5em;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: .5px solid $dark-gray;
+}
+
 img {
   max-width: 100%;
 }
@@ -33,3 +56,53 @@ img {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+main span {
+  float: right;
+}
+
+.bannerImg {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.interestBox {
+  @include blockStyle()
+}
+
+.resources {
+  @include blockStyle()
+}
+
+.resources h3 {
+  background-color: $dark-gray;
+  color: $light-gray;
+  margin: 0;
+  padding: .5em;
+}
+
+.resourceLinks {
+  background-color: #f8f9fa;
+}
+
+.resources a {
+  padding: 8px 20px;
+  padding-bottom: 8px;
+}
+
+.importantDates {
+    @include blockStyle()
+}
+
+.importantDates h3{
+  background-color: $byui-blue;
+  color: $light-gray;
+  margin: 0;
+  padding: .5em;
+}
+
+.days {
+  margin: 0;
+  padding: 8px;
+}
+
