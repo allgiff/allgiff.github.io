@@ -1,10 +1,19 @@
 const options = [
     {
-        label: "__ Assignment",
-        url: "#"
+        label: "Playing Card Assignment",
+        url: "https://codepen.io/allgiff/pen/PoKKoZL"
+    }, {
+        label: "Animation Assignment",
+        url: "https://codepen.io/allgiff/pen/oNeYBYb"
+    }, {
+        label: "Shapes Assignment",
+        url: "https://codepen.io/allgiff/pen/yLoXabq"
     }, {
         label: "BYUI Remake Assignment",
         url: "https://allgiff.github.io/byui-home/home.html"
+    }, {
+        label: "Zen Garden Assignment",
+        url: "https://allgiff.github.io/CSSZenGarden/index.html"
     }
 
 ]

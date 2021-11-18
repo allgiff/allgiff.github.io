@@ -1,9 +1,10 @@
 
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
         html {
             margin: 0 auto;
             background-color: #38686A;
             padding-bottom: 40px;
+            font-family: 'Lato', sans-serif;
         }
         body {
             background-color: white;
@@ -11,32 +12,29 @@
             margin: 0 auto;
             height: 100%;
         }
-        h1 { font-family: 'Source Serif Pro', serif;
+        h1 {
             padding: 10px;
             padding-bottom: 0px;
             text-align: center;
 
         }
         h2, h3 {
-            font-family: 'Source Serif Pro', serif;
             padding: 10px;
             padding-bottom: 0px;
         }
         p {
-            font-family: 'Source Sans Pro', sans-serif;
             padding: 10px;
             padding-top: 0px;
         }
         li {
-            font-family: 'Source Sans Pro', sans-serif;
             padding: 10px;
             padding-top: 0px;
         }
         a {
-            font-family: 'Source Sans Pro', sans-serif;
             padding: 0px 0px 20px 20px;
         }
         a:link {
+            color: #79B7B9;
             text-decoration: underline;
         }
         a:visited {
