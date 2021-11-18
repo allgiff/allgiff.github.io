@@ -4,7 +4,7 @@ const options = [
         url: "#"
     }, {
         label: "BYUI Remake Assignment",
-        url: "#"
+        url: "https://allgiff.github.io/byui-home/home.html"
     }
 
 ]
