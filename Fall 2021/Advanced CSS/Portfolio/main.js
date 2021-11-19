@@ -1,5 +1,8 @@
 const options = [
     {
+        label: "SCSS Quiz Assignment",
+        url: "https://allgiff.github.io/Fall%202021/Advanced%20CSS/Week%203%20assign/quiz.html"
+    },{
         label: "Playing Card Assignment",
         url: "https://codepen.io/allgiff/pen/PoKKoZL"
     }, {
@@ -8,6 +11,9 @@ const options = [
     }, {
         label: "Shapes Assignment",
         url: "https://codepen.io/allgiff/pen/yLoXabq"
+    }, {
+        label: "Bootstrap Assignment",
+        url: "https://allgiff.github.io/Fall%202021/Advanced%20CSS/Bootstrap-Skate-Website-lesson1.1/skateOrDie/index.html"
     }, {
         label: "BYUI Remake Assignment",
         url: "https://allgiff.github.io/byui-home/home.html"
