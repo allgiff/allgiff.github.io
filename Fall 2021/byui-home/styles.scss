@@ -69,9 +69,22 @@ img {
 
 header {
   background-color: $byui-blue;
-  display: flex;
   color: white;
   width: 100%;
+}
+
+.oof {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ugh {
+  display: flex;
+  justify-content:  flex-start;
+}
+
+form {
+  display: none;
 }
 
 .icon-byui-logo {
@@ -79,7 +92,6 @@ header {
   background-color: black;
   padding: .5em;
   float: left;
-  grid-column: 1/2;
 }
 
 header a {

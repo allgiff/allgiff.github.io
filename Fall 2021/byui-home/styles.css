@@ -1049,9 +1049,22 @@ img {
 
 header {
   background-color: #056cb6;
-  display: flex;
   color: white;
   width: 100%;
+}
+
+.oof {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ugh {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  display: none;
 }
 
 .icon-byui-logo {
@@ -1059,7 +1072,6 @@ header {
   background-color: black;
   padding: 0.5em;
   float: left;
-  grid-column: 1/2;
 }
 
 header a {
