@@ -38,13 +38,20 @@ function createNote() {
     noteBody.classList.add('noteBody');
     grabMainNote.appendChild(noteBody);
     noteBody.placeholder = 'Start Writing!';
+
+    userContent();
 }
 
 function userContent() {
-    // take the note title that the user adds into the input
-    // add the user input into the note title in the side bar
-}
-
-function saveNote() {
-
+    document.addEventListener('change', updateValue);
+    //Take the information from the input and the text area and save them to local storage
+    var titleLocal = document.querySelector('.notesTitle').value;
+    console.log(titleLocal);
+    function updateValue(e) {
+        localStorage.setItem('note', titleLocal);
+    }
+    
+    //Take the information from local storage and add the note details into the side bar
+        // var addTitle = document.querySelector('.noteSmallTitle')
+    // titleLocal.appendChild(addTitle);
 }
