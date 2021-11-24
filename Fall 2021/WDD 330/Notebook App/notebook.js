@@ -11,13 +11,11 @@ function createNote() {
     //create and add class for the title
     var noteSmallTitle = document.createElement('div');
     noteSmallTitle.classList.add('noteSmallTitle');
-    noteSmallTitle.innerHTML += 'Note Title';
     grabThis.appendChild(noteSmallTitle);
 
     //create and add class for the body
     var noteSmallBody = document.createElement('div');
     noteSmallBody.classList.add('noteSmallBody');
-    noteSmallBody.innerHTML += 'Note Content';
     grabThis.appendChild(noteSmallBody);
 
     //create and add class for last updated date
@@ -43,15 +41,32 @@ function createNote() {
 }
 
 function userContent() {
-    document.addEventListener('change', updateValue);
-    //Take the information from the input and the text area and save them to local storage
-    var titleLocal = document.querySelector('.notesTitle').value;
-    console.log(titleLocal);
-    function updateValue(e) {
-        localStorage.setItem('note', titleLocal);
+    //make sure the listener only fires when the title is changed
+    var addTitle = document.querySelector('.notesTitle');
+    addTitle.addEventListener('change', updateTitle);
+    //Take the information from the input and save them to local storage
+    function updateTitle(e) {
+        var titleLocal = document.querySelector('.notesTitle').value;
+        localStorage.setItem('Note Title', titleLocal);
+
+        //Take the information from local storage and add the note details into the side bar
+        var addTitle = document.querySelector('.noteSmallTitle');
+        var textToAdd = document. createTextNode(titleLocal);
+        addTitle.appendChild(textToAdd);
     }
     
-    //Take the information from local storage and add the note details into the side bar
-        // var addTitle = document.querySelector('.noteSmallTitle')
-    // titleLocal.appendChild(addTitle);
+    //make sure the listener only fires when the body is changed
+    var addBody = document.querySelector('.noteBody');
+    addBody.addEventListener('change', updateBody);
+    
+    //Take the information from the text area and save them to local storage
+    function updateBody(e) {
+        var bodyLocal = document.querySelector('.noteBody').value;
+        localStorage.setItem('Note Body', bodyLocal);
+
+        //Take the information from local storage and add the note details into the side bar
+        var addSideBody = document.querySelector('.noteSmallBody');
+        var textAdd = document. createTextNode(bodyLocal);
+        addSideBody.appendChild(textAdd);
+    }
 }
