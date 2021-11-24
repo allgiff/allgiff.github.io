@@ -20,6 +20,9 @@ const options = [
     }, {
         label: "Zen Garden Assignment",
         url: "https://allgiff.github.io/CSSZenGarden/index.html"
+    }, {
+        label: "CSS Battle Assignment",
+        url: "https://codepen.io/allgiff/pen/ZEJNgMN"
     }
 
 ]
