@@ -1,3 +1,5 @@
+document.addEventListener(onload, getLocal());
+
 function createNote() {
     let grabThis = document.querySelector('.notesList');
     let grabMainNote = document.querySelector('.notesPreview');
@@ -69,4 +71,30 @@ function userContent() {
         var textAdd = document. createTextNode(bodyLocal);
         addSideBody.appendChild(textAdd);
     }
+}
+
+function getLocal() {
+    //take the information from local storage and add it back onto the site on page load
+    //create the title of the note and assign a class
+    var notesTitle = document.createElement('input');
+    notesTitle.classList.add('notesTitle');
+    grabMainNote.appendChild(notesTitle);
+    notesTitle.placeholder = 'Note Title';
+    
+    //1. Grab items from local storage
+    //title
+    let grab = localStorage.getItem('Note Title');
+    var text = document.createTextNode(grab);
+    var add = document.querySelector('.notesTitle');
+    //body
+    let get = localStorage.getItem('Note Body');
+    let nab = document.createTextNode(get);
+    let place = document.querySelector('.noteBody')
+    
+    //3. Add items back to document
+    add.appendChild(text);
+    place.appendChild(nab);
+
+    //add title and body to sidebar
+
 }
