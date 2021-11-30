@@ -32,6 +32,12 @@ function createNote() {
     notesTitle.classList.add('notesTitle');
     grabMainNote.appendChild(notesTitle);
     notesTitle.placeholder = 'Note Title';
+    // var notesTitle = document.querySelector('.notesTitle')
+    // var newTitle = document.createElement('input');
+    // newTitle.classList.add('notesTitle');
+    // newTitle.placeholder = 'Note Title';
+    // grabMainNote.replaceChild(newTitle, notesTitle);
+
 
     //create the body of the note and assign a class and placeholder
     var noteBody = document.createElement('textarea');
@@ -78,23 +84,44 @@ function getLocal() {
     //create the title of the note and assign a class
     var notesTitle = document.createElement('input');
     notesTitle.classList.add('notesTitle');
+    let grabMainNote = document.querySelector('.notesPreview');
     grabMainNote.appendChild(notesTitle);
-    notesTitle.placeholder = 'Note Title';
+    //body
+    var notesBody = document.createElement('textarea');
+    notesBody.classList.add('noteBody');
+    let grabNote = document.querySelector('.notesPreview');
+    grabNote.appendChild(notesBody);
+    //sidebar
+    let getThis = document.querySelector('.notesList');
+    var noteSmallT = document.createElement('div');
+    noteSmallT.classList.add('noteSmallTitle');
+    getThis.appendChild(noteSmallT);
+    //sidebody
+    var noteSmallB = document.createElement('div');
+    noteSmallB.classList.add('noteSmallBody');
+    getThis.appendChild(noteSmallB);
     
-    //1. Grab items from local storage
+
+    //Grab items from local storage and add them back onto the document
     //title
     let grab = localStorage.getItem('Note Title');
     var text = document.createTextNode(grab);
     var add = document.querySelector('.notesTitle');
+    add.value = grab;
+    let small = document.querySelector('.noteSmallTitle');
+    small.appendChild(text);
+
     //body
     let get = localStorage.getItem('Note Body');
     let nab = document.createTextNode(get);
+    let nab2 = document.createTextNode(get);
     let place = document.querySelector('.noteBody')
-    
-    //3. Add items back to document
-    add.appendChild(text);
     place.appendChild(nab);
+    let smallBod = document.querySelector('.noteSmallBody');
+    smallBod.appendChild(nab2);
 
-    //add title and body to sidebar
+}
 
+function searchDoc() {
+    
 }
