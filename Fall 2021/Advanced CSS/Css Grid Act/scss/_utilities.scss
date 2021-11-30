@@ -1,1 +1,23 @@
 @use 'variables'as *;
+
+html {
+    font-family: $body-font;
+    background-color: $background-color;
+}
+
+h1 {
+    font-family: $headline-font;
+}
+
+.dot {
+    background-color: $logo-color;
+    border-radius: $logo-size/2.4;
+}
+
+a {
+    color: $font-color;
+    text-decoration: none;
+}
+a:hover {
+    color: $logo-color;
+}

@@ -16,13 +16,16 @@ const options = [
         url: "https://allgiff.github.io/Fall%202021/Advanced%20CSS/Bootstrap-Skate-Website-lesson1.1/skateOrDie/index.html"
     }, {
         label: "BYUI Remake Assignment",
-        url: "https://allgiff.github.io/byui-home/home.html"
+        url: "https://allgiff.github.io/Fall%202021/Advanced%20CSS/byui-home/home.html"
     }, {
         label: "Zen Garden Assignment",
         url: "https://allgiff.github.io/CSSZenGarden/index.html"
     }, {
         label: "CSS Battle Assignment",
         url: "https://codepen.io/allgiff/pen/ZEJNgMN"
+    }, {
+        label: "Grid Layout Assignment",
+        url: "https://allgiff.github.io/Fall%202021/Advanced%20CSS/Css%20Grid%20Act/index.html"
     }
 
 ]
