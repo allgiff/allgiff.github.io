@@ -3,10 +3,13 @@
 html {
     font-family: $body-font;
     background-color: $background-color;
+    margin: 0 auto;
+    height: 100%;
 }
 
 h1 {
     font-family: $headline-font;
+    font-size: 60px;
 }
 
 .dot {
@@ -20,4 +23,9 @@ a {
 }
 a:hover {
     color: $logo-color;
+}
+
+.img-wrap {
+    border: 2vw;
+    box-shadow: -4px 4px 17px 13px rgb(0 0 0 / 8%);
 }
