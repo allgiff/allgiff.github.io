@@ -38,7 +38,6 @@ function createNote() {
     // newTitle.placeholder = 'Note Title';
     // grabMainNote.replaceChild(newTitle, notesTitle);
 
-
     //create the body of the note and assign a class and placeholder
     var noteBody = document.createElement('textarea');
     noteBody.classList.add('noteBody');
@@ -52,6 +51,10 @@ function userContent() {
     //make sure the listener only fires when the title is changed
     var addTitle = document.querySelector('.notesTitle');
     addTitle.addEventListener('change', updateTitle);
+    //make sure the listener only fires when the body is changed
+    var addBody = document.querySelector('.noteBody');
+    addBody.addEventListener('change', updateBody);
+
     //Take the information from the input and save them to local storage
     function updateTitle(e) {
         var titleLocal = document.querySelector('.notesTitle').value;
@@ -62,10 +65,6 @@ function userContent() {
         var textToAdd = document. createTextNode(titleLocal);
         addTitle.appendChild(textToAdd);
     }
-    
-    //make sure the listener only fires when the body is changed
-    var addBody = document.querySelector('.noteBody');
-    addBody.addEventListener('change', updateBody);
     
     //Take the information from the text area and save them to local storage
     function updateBody(e) {
@@ -120,8 +119,12 @@ function getLocal() {
     let smallBod = document.querySelector('.noteSmallBody');
     smallBod.appendChild(nab2);
 
+    userContent();
 }
 
-function searchDoc() {
-    
-}
+const input = document.querySelector('[type="search"]');
+
+input.addEventListener('search', () => {
+    console.log("The term searched for was " + input.value);
+        
+})

@@ -1,6 +1,16 @@
 /*for global styles*/
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
+@mixin alignSmall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 $headline-font: 'Old Standard TT',
 serif;
 $body-font: 'Hevetica',
