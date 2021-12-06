@@ -3,6 +3,10 @@ document.addEventListener(onload, getLocal());
 function createNote() {
     let grabThis = document.querySelector('.notesList');
     let grabMainNote = document.querySelector('.notesPreview');
+    let delTitle = document.querySelector('.notesTitle');
+    let delBody = document.querySelector('.noteBody');
+    delTitle.remove();
+    delBody.remove();
 
     //This is for the sidebar, under the add notes button.
     //create and add a class for the whole list item
@@ -32,11 +36,6 @@ function createNote() {
     notesTitle.classList.add('notesTitle');
     grabMainNote.appendChild(notesTitle);
     notesTitle.placeholder = 'Note Title';
-    // var notesTitle = document.querySelector('.notesTitle')
-    // var newTitle = document.createElement('input');
-    // newTitle.classList.add('notesTitle');
-    // newTitle.placeholder = 'Note Title';
-    // grabMainNote.replaceChild(newTitle, notesTitle);
 
     //create the body of the note and assign a class and placeholder
     var noteBody = document.createElement('textarea');
@@ -99,8 +98,10 @@ function getLocal() {
     var noteSmallB = document.createElement('div');
     noteSmallB.classList.add('noteSmallBody');
     getThis.appendChild(noteSmallB);
+    reAddLocal();
+}
     
-
+function reAddLocal() {
     //Grab items from local storage and add them back onto the document
     //title
     let grab = localStorage.getItem('Note Title');
@@ -122,9 +123,21 @@ function getLocal() {
     userContent();
 }
 
-const input = document.querySelector('[type="search"]');
+const input = document.querySelector('input[type="search"]', 'button[type="search]');
 
-input.addEventListener('search', () => {
-    console.log("The term searched for was " + input.value);
+//search the local storage array for a match
+input.addEventListener('keyup', () => {
+    let searchString = input.value.toLowerCase();
+    console.log(searchString);
+    //grab the notes from local storage and add them to an array
+var storedNoteTitle = localStorage.getItem("Note Title");
+var storedNoteBody = localStorage.getItem("Note Body");
+storedNoteTitle = [];
+storedNoteBody = [];
+    var filtered = storedNoteTitle.filter(storedNoteTitle => {
+        return (storedNoteTitle.toLowerCase().includes(searchString) || storedNoteBody.toLocaleLowerCase().includes(searchString));
+        
+    });
+    reAddLocal(filtered);
         
 })

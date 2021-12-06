@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook App</title>
+    <link rel="stylesheet" href="notebook.css">
+</head>
+<body>
+    
+    <div class="notes" id="app">
+        <div class="noteSidebar">
+            <form>
+            <input class="searchBar" type="search" placeholder="Search..">
+            <button class="searchBtn" type="search">Search</button>
+            </form>
+            <button class="notesAdd" type="button" onclick="createNote()">Add Note</button>
+            <div class="notesListItem"></div>
+            <div class="noteSmallTitle"></div>
+            <div class="notesList">
+
+            </div>
+        </div>
+        <div class="notesPreview">
+
+        </div>
+    </div>
+
+<script src="notebook.js"></script>
+</body>
+</html>

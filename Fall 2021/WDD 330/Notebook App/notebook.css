@@ -131,6 +131,7 @@ form {
   margin: 0 auto;
   margin-bottom: 10px;
   font-size: 17px;
+  border: 1px solid #904e55;
 }
 
 .searchBtn {

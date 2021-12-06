@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #f2efe9;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+}
+
+.notes * {
+    font-family: "Raleway", sans-serif;
+}
+
+.noteSidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.notesAdd {
+    background: #904e55;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    width: 100%;
+    position: relative;
+}
+
+.notesAdd::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 10px hsl(354, 30%, 44%);
+}
+
+.notesAdd:active::after {
+    box-shadow: 0 0 0 0 #904e55;
+    opacity: 0.75;
+    transition: 0s;
+}
+
+.notesAdd:hover {
+    background: #564e58;
+}
+
+.noteListItem {
+    cursor: pointer;
+}
+
+.noteListItem--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.noteSmallTitle,
+.noteSmallUpdated {
+    padding: 10px;
+}
+
+.noteSmallTitle {
+    font-size: 1.2em;
+}
+
+.noteSmallBody {
+    padding: 0 10px;
+}
+
+.noteSmallUpdated {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.notesPreview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notesTitle,
+.noteBody {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    background-color: #f2efe9;
+}
+
+.notesTitle {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.noteBody {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
+
+form {
+    display: flex;
+}
+
+.searchBar {
+    width: 96%;
+    padding: 6px;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: 1px solid #904e55;
+}
+
+.searchBtn {
+    padding: 8px;
+    background: #904e55;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}

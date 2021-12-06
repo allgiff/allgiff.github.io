@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
 html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #f2efe9;
+    background-color: whitesmoke;
 }
 
 .notes {
@@ -12,7 +12,7 @@ body {
 }
 
 .notes * {
-    font-family: 'Raleway',
+    font-family:
     sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .notes__add {
-    background: #904e55;
+    background: teal;
     border: none;
     border-radius: 7px;
     color: #ffffff;
@@ -38,7 +38,7 @@ body {
 }
 
 .notes__add:hover {
-    background: #904e55;
+    background: teal;
 }
 
 .notes__list-item {
@@ -87,7 +87,7 @@ body {
 .notes__title {
     font-size: 3em;
     font-weight: bold;
-    background-color: #f2efe9;
+    background-color: whitesmoke;
 }
 
 .notes__body {
@@ -96,5 +96,5 @@ body {
     line-height: 1.5;
     margin-top: 2em;
     resize: none;
-    background-color: #f2efe9;
+    background-color: whitesmoke;
 }
