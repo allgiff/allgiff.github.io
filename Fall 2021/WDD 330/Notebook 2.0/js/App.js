@@ -1,6 +1,6 @@
 import NotesView from "./NotesView.js";
 import NotesAPI from "./NotesAPI.js";
-
+    
 export default class App {
     constructor(root) {
         this.notes = [];
@@ -29,6 +29,12 @@ export default class App {
     _setActiveNote(note) {
         this.activeNote = note;
         this.view.updateActiveNote(note);
+    }
+
+    _searchFunct() {
+    
+        
+
     }
 
     _handlers() {
