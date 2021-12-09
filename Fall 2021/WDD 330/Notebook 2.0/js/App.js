@@ -31,12 +31,6 @@ export default class App {
         this.view.updateActiveNote(note);
     }
 
-    _searchFunct() {
-    
-        
-
-    }
-
     _handlers() {
         return {
             onNoteSelect: noteId => {
