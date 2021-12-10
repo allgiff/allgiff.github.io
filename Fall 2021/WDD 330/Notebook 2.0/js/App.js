@@ -36,20 +36,20 @@ export default class App {
     _searchIt() {
         // get search bar element
         const searchInput = document.querySelector(".searchBar");
-        // get the list of notes
-        let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
+       
 
         // listen for user events
         searchInput.addEventListener("keyup", (event) => {
             const { value } = event.target;
-    
             // get user search input converted to lowercase
             const searchQuery = value.toLowerCase();
-    
-            for(let i = 0; i < notes.length; i++) {
+                    // get the list of notes
+            let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
+
+            for (const { title } of notes) {
                 // store title text and convert to lowercase
-                let noteTitle = notes.title;
-                console.log(notes.title);
+                let noteTitle = title.toLowerCase();
+                console.log(noteTitle);
         
                 // compare current name to search input
                 if (noteTitle.includes(searchQuery)) {
