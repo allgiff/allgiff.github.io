@@ -8,6 +8,7 @@ export default class App {
         this.view = new NotesView(root, this._handlers());
 
         this._refreshNotes();
+        this._searchIt();
     }
 
     _refreshNotes() {
@@ -26,11 +27,44 @@ export default class App {
         this.view.updateNotePreviewVisibility(notes.length > 0);
     }
 
+    //note the user is working
     _setActiveNote(note) {
         this.activeNote = note;
         this.view.updateActiveNote(note);
     }
 
+    _searchIt() {
+        // get search bar element
+        const searchInput = document.querySelector(".searchBar");
+        // get the list of notes
+        let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
+
+        // listen for user events
+        searchInput.addEventListener("keyup", (event) => {
+            const { value } = event.target;
+    
+            // get user search input converted to lowercase
+            const searchQuery = value.toLowerCase();
+    
+            for(let i = 0; i < notes.length; i++) {
+                // store title text and convert to lowercase
+                let noteTitle = notes.title;
+                console.log(notes.title);
+        
+                // compare current name to search input
+                if (noteTitle.includes(searchQuery)) {
+                    // found name matching search, display it
+                    title.style.display = "block";
+                }
+                else {
+                    // no match, don't display name
+                    title.style.display = "none";
+                }
+            }
+        });
+    }
+
+    //update note changes, like edits and deletes
     _handlers() {
         return {
             onNoteSelect: noteId => {

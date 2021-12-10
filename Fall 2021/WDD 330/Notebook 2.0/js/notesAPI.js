@@ -31,34 +31,4 @@ export default class NotesAPI {
 
         localStorage.setItem("notesapp-notes", JSON.stringify(newNotes));
     }
-
-    static searchIt() {
-        // get search bar element
-        const searchInput = document.querySelector(".searchBar");
-        // get the list of notes
-        const notes = NotesAPI.getAllNotes();
-
-        // listen for user events
-        searchInput.addEventListener("keyup", (event) => {
-            const { value } = event.target;
-    
-            // get user search input converted to lowercase
-            const searchQuery = value.toLowerCase();
-    
-            for (const title of notes) {
-                // store name text and convert to lowercase
-                let noteTitle = title.textContent.toLowerCase();
-        
-                // compare current name to search input
-                if (noteTitle.includes(searchQuery)) {
-                    // found name matching search, display it
-                    title.style.display = "block";
-                }
-                else {
-                    // no match, don't display name
-                    title.style.display = "none";
-                }
-            }
-        });
-    }
 }

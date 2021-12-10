@@ -6,6 +6,7 @@ export default class NotesView {
         this.onNoteAdd = onNoteAdd;
         this.onNoteEdit = onNoteEdit;
         this.onNoteDelete = onNoteDelete;
+        //add the code for the note into the html
         this.root.innerHTML = `
             <div class="notes__sidebar">
             <form>
@@ -36,6 +37,7 @@ export default class NotesView {
         this.updateNotePreviewVisibility(false);
     }
 
+    //create and add to the sidebar
     _createListItemHTML(id, title, body, updated) {
         const MAX_BODY_LENGTH = 60;
 
