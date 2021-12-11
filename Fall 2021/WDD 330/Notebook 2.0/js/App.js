@@ -54,11 +54,12 @@ export default class App {
                 // compare current name to search input
                 if (noteTitle.includes(searchQuery)) {
                     // found name matching search, display it
-                    title.style.display = "block";
+                    //noteTitle.style.display = "block";
+                    //this.view.updateNoteList(noteTitle);
                 }
                 else {
                     // no match, don't display name
-                    title.style.display = "none";
+                    //noteTitle.style.display = "none";
                 }
             }
         });
