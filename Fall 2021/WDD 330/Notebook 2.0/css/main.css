@@ -143,3 +143,11 @@ form {
     border: none;
     cursor: pointer;
 }
+
+.display {
+    display: block;
+}
+
+.noDisplay {
+    display: none;
+}

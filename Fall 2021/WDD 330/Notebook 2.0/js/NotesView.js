@@ -16,7 +16,7 @@ export default class NotesView {
                 <button class="notes__add" type="button">Add Note</button>
                 <div class="notes__list"></div>
             </div>
-            <div class="notes__preview">
+            <div class="notes__preview display">
                 <input class="notes__title" type="text" placeholder="New Note">
                 <textarea class="notes__body" placeholder="Start Writing!"></textarea>
             </div>
@@ -42,7 +42,7 @@ export default class NotesView {
         const MAX_BODY_LENGTH = 60;
 
         return `
-            <div class="notes__list-item" data-note-id="${id}">
+            <div class="notes__list-item display" data-note-id="${id}">
                 <div class="notes__small-title">${title}</div>
                 <div class="notes__small-body">
                     ${body.substring(0, MAX_BODY_LENGTH)}

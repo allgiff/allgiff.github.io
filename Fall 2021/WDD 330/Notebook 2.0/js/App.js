@@ -49,17 +49,21 @@ export default class App {
             for (const { title } of notes) {
                 // store title text and convert to lowercase
                 let noteTitle = title.toLowerCase();
-                console.log(noteTitle);
+                console.log(noteTitle); 
+                let grab = document.querySelector('.display');
+                let get = document.querySelector('.display');
         
                 // compare current name to search input
                 if (noteTitle.includes(searchQuery)) {
                     // found name matching search, display it
-                    //noteTitle.style.display = "block";
+                    grab.classList.add('display');
+                    get.classList.add('display');
                     //this.view.updateNoteList(noteTitle);
                 }
                 else {
                     // no match, don't display name
-                    //noteTitle.style.display = "none";
+                    grab.classList.add('noDisplay');
+                    get.classList.add('noDisplay');
                 }
             }
         });
