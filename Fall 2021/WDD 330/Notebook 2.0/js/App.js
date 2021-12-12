@@ -45,13 +45,14 @@ export default class App {
             const searchQuery = value.toLowerCase();
                     // get the list of notes
             let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
+            let grab = document.querySelector('.notes__list-item');
+            let get = document.querySelector('.notes__preview');
 
             for (const { title } of notes) {
                 // store title text and convert to lowercase
                 let noteTitle = title.toLowerCase();
-                console.log(noteTitle); 
-                let grab = document.querySelector('.display');
-                let get = document.querySelector('.display');
+                console.log(noteTitle);
+    //currently only removes the first item in the note list
         
                 // compare current name to search input
                 if (noteTitle.includes(searchQuery)) {
