@@ -45,28 +45,37 @@ export default class App {
             const searchQuery = value.toLowerCase();
                     // get the list of notes
             let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
-            let grab = document.querySelector('.notes__list-item');
-            let get = document.querySelector('.notes__preview');
+            // let grab = document.querySelector('.notes__list-item');
+            // let get = document.querySelector('.notes__preview');
+            //document.getElementsByClassName('data-note-id');
 
-            for (const { title } of notes) {
-                // store title text and convert to lowercase
-                let noteTitle = title.toLowerCase();
-                console.log(noteTitle);
-    //currently only removes the first item in the note list
+            
+            //get the notes uning their unique id
+            let theNote = document.querySelector(".notes__list-item");
+
+            for(const { title } of notes) {
+                    // store title text and convert to lowercase
+                    let noteTitle = title.toLowerCase();
+                    console.log(noteTitle);
+                    //currently only removes the first item in the note list
         
-                // compare current name to search input
-                if (noteTitle.includes(searchQuery)) {
-                    // found name matching search, display it
-                    grab.classList.add('display');
-                    get.classList.add('display');
-                    //this.view.updateNoteList(noteTitle);
+                    // compare current name to search input
+                    if (noteTitle.includes(searchQuery)) {
+                        // found name matching search, display it
+                        theNote.classList.add('display');    
+
+                        // title.style.display = "block";
+                        //this.view.updateNoteList(noteTitle);
+                    }
+                    else {
+                        // no match, don't display name
+                        theNote.classList.add('noDisplay');
+
+                    
+                        // title.style.display = "none";
+                    }
                 }
-                else {
-                    // no match, don't display name
-                    grab.classList.add('noDisplay');
-                    get.classList.add('noDisplay');
-                }
-            }
+            
         });
     }
 
