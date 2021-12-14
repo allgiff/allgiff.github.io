@@ -33,7 +33,7 @@ export default class App {
         this.view.updateActiveNote(note);
     }
 
-    _searchIt() {
+    _searchIt(values) {
         // get search bar element
         const searchInput = document.querySelector(".searchBar");
        
@@ -52,6 +52,12 @@ export default class App {
             
             //get the notes uning their unique id
             let theNote = document.querySelector(".notes__list-item");
+            // let localID = localStorage.getItem("id");
+
+            // let noteID = document.querySelectorAll("[data-note-id]");
+            // console.log(localID);
+            // let x = notes.id;
+            // console.log(x);
 
             for(const { title } of notes) {
                     // store title text and convert to lowercase
