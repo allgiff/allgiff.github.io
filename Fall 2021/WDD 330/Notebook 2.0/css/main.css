@@ -137,14 +137,6 @@ form {
     cursor: pointer;
 }
 
-.display {
-    display: block;
-}
-
-.noDisplay {
-    display: none;
-}
-
 .notes__preview {
     display: flex;
     flex-direction: column;

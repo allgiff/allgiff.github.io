@@ -33,32 +33,20 @@ export default class App {
         this.view.updateActiveNote(note);
     }
 
-    _searchIt(values) {
+    _searchIt() {
         // get search bar element
         const searchInput = document.querySelector(".searchBar");
-       
 
-        // listen for user events
-        searchInput.addEventListener("keyup", (event) => {
+        searchInput.addEventListener("keyup", function(event) {
             const { value } = event.target;
             // get user search input converted to lowercase
             const searchQuery = value.toLowerCase();
                     // get the list of notes
             let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
-            // let grab = document.querySelector('.notes__list-item');
-            // let get = document.querySelector('.notes__preview');
-            //document.getElementsByClassName('data-note-id');
-
             
-            //get the notes uning their unique id
+            //get the notes
             let theNote = document.querySelector(".notes__list-item");
-            // let localID = localStorage.getItem("id");
-
-            // let noteID = document.querySelectorAll("[data-note-id]");
-            // console.log(localID);
-            // let x = notes.id;
-            // console.log(x);
-
+            
             for(const { title } of notes) {
                     // store title text and convert to lowercase
                     let noteTitle = title.toLowerCase();
@@ -68,17 +56,12 @@ export default class App {
                     // compare current name to search input
                     if (noteTitle.includes(searchQuery)) {
                         // found name matching search, display it
-                        theNote.classList.add('display');    
-
-                        // title.style.display = "block";
-                        //this.view.updateNoteList(noteTitle);
+                        theNote.style.display = "block";
+                        
                     }
                     else {
                         // no match, don't display name
-                        theNote.classList.add('noDisplay');
-
-                    
-                        // title.style.display = "none";
+                        theNote.style.display = "none";
                     }
                 }
             
