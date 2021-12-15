@@ -31,7 +31,7 @@ const options = [
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/Week%2010/week10notes.html"
     }, {
         label: "Challenge 2",
-        url: "https://allgiff.github.io/Fall%202021/WDD%20330/test/index.html"
+        url: "https://allgiff.github.io/Fall%202021/WDD%20330/Notebook%202.0/index.html"
     }, {
         label: "Final Video",
         url: "https://www.loom.com/share/a8f408101eef406e984e3a028438337a"
