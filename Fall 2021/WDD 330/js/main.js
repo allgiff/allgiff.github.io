@@ -32,6 +32,9 @@ const options = [
     }, {
         label: "Challenge 2",
         url: "https://allgiff.github.io/Fall%202021/WDD%20330/test/index.html"
+    }, {
+        label: "Final Video",
+        url: "https://www.loom.com/share/a8f408101eef406e984e3a028438337a"
     }
 
 ]
