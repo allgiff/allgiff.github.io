@@ -45,6 +45,8 @@ export default class App {
             let notes = JSON.parse(localStorage.getItem('notesapp-notes'));
             
             //get the notes
+            let theTitle = document.getElementsByTagName("li");
+            console.log(theTitle);
             let theNote = document.querySelector(".notes__list-item");
             
             for(const { title } of notes) {
