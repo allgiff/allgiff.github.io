@@ -1,0 +1,240 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Galada|Noto+Sans&display=swap");
+.logo-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Galada", serif;
+  font-size: 32px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #5D5D5D;
+}
+nav a:hover {
+  color: #759E94;
+}
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+  margin: 10px;
+  padding: 1em;
+  background-color: #EDCBC2;
+}
+.banner-box {
+  padding: 5px;
+  margin: 0 auto;
+}
+body {
+  background-color: #A9D7CC;
+  font-family: "Noto Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 14px;
+  color: #5D5D5D;
+  margin: 0 auto;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.banner-box {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.banner-box img {
+  width: 100%;
+}
+.home-img-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+}
+.home-headline-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0 auto;
+}
+.home-img-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+}
+.home-headline-2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 0 auto;
+}
+.home-img-3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+}
+.home-headline-3 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 0 auto;
+}
+.r-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+}
+.r-header-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 3px;
+}
+.food-image-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 10px;
+  width: 100%;
+}
+.ing-1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0 auto;
+}
+.recipe-1 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  padding: 5px;
+}
+.r-header-2 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin-bottom: 3px;
+}
+.food-image-2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 100%;
+}
+.ing-2 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-top: 1px;
+  margin-left: 17px;
+}
+.recipe-2 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  padding: 5px;
+}
+.t-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.overview {
+  grid-column: 1/4;
+  text-align: center;
+  padding: 10px;
+}
+.t-headline-1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-bottom: 3px;
+}
+.t-img-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+}
+.t-content-1 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  padding: 10px;
+  margin: 0 auto;
+}
+.t-headline-2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  margin-bottom: 3px;
+}
+.t-img-2 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  width: 100%;
+}
+.t-content-2 {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  padding: 10px;
+  margin: 0 auto;
+}
+.t-headline-3 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  margin-bottom: 3px;
+}
+.t-img-3 {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  padding: 3px;
+  width: 100%;
+  border: 2px solid #ccc;
+}
+.t-content-3 {
+  grid-column: 2/4;
+  grid-row: 7/8;
+  padding: 10px;
+  margin: 0 auto;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.about-header {
+  text-align: center;
+}
+.about-image {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: block;
+  padding: 10px;
+  background-color: #EDCBC2;
+  margin: 0 auto;
+}
+.my-name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0 auto;
+  padding: 5px;
+}
+.about-info {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 55px;
+  padding: 10px;
+
+  margin-top: 45px;
+  margin-bottom: 1px;
+}
