@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+}
+body {
+    font-family: 'Assistant';
+    margin: 0 auto;
+    width: 100%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+img {
+    width: 75%;
+}
+section {
+    background-color: #124559;
+    border: 1px solid #525298;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 34.5em){
+        .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 54.5em){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

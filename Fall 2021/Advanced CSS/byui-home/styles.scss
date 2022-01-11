@@ -1,0 +1,285 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin blockStyle {
+  margin: 0 auto;
+  border: 1px solid $dark-gray;
+  margin: 1em;
+  max-width: 320px;
+}
+
+@mixin blueButton {
+  background-color: $byui-blue;
+  color: $light-gray;
+  border: none;
+  border-radius: 5px;
+  padding: .5em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+html {
+  font-family: 'BYUI Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $link-blue;
+  padding: .5em;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: .5px solid $dark-gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header {
+  background-color: $byui-blue;
+  color: white;
+  width: 100%;
+}
+
+.oof {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ugh {
+  display: flex;
+  justify-content:  flex-start;
+}
+
+form {
+  display: none;
+}
+
+.icon-byui-logo {
+  color: white;
+  background-color: black;
+  padding: .5em;
+  float: left;
+}
+
+header a {
+  color: white;
+  font-size: 30px;
+}
+
+main span {
+  float: right;
+}
+
+.bannerImg {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.interestBox {
+  @include blockStyle()
+}
+
+.getInfo {
+  @include blockStyle()
+}
+
+.getInfo h3{
+    background-color: $dark-gray;
+    color: $light-gray;
+    margin: 0;
+    padding: .5em;
+}
+
+.resources {
+  @include blockStyle()
+}
+
+.resources h3 {
+  background-color: $dark-gray;
+  color: $light-gray;
+  margin: 0;
+  padding: .5em;
+}
+
+.resourceLinks {
+  background-color: #f8f9fa;
+}
+
+.resources a {
+  padding: 8px 20px;
+  padding-bottom: 8px;
+}
+
+.importantDates {
+  @include blockStyle()
+}
+
+.importantDates h3 {
+  background-color: $byui-blue;
+  color: $light-gray;
+  margin: 0;
+  padding: .5em;
+}
+
+.days {
+  margin: 0;
+  padding: 8px;
+}
+
+.newsroom {
+  margin: 0 auto;
+  margin: 1em;
+}
+
+.newsroom h6 {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6 px;
+  text-transform: uppercase;
+  color: $body-font;
+}
+
+.newsroom h4 {
+  color: $byui-blue;
+  font-weight: 600;
+}
+
+.newsroom button {
+  background-color: $dark-gray;
+  border: none;
+  color: $light-gray;
+  padding: .5em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.newsButton {
+  float: right;
+  margin: 1em;
+  @include blueButton()
+}
+
+.devoContainer {
+  @include blockStyle()
+}
+
+.devoInfo {
+  margin: 1em;
+}
+
+.devoInfo h4 {
+  color: $byui-blue;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.devoInfo .date {
+  font-weight: 700;
+}
+
+.devoInfo button {
+  @include blueButton()
+}
+
+.foot {
+  background-color: $byui-blue;
+}
+
+//large view
+@media only screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 3fr 400px;
+    grid-template-rows: 100px .35fr .5fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .bannerImg {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .contain {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .interestBox {
+    max-height: 280px;
+  }
+
+  .getInfo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .resources {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-height: 200px;
+  }
+
+  .importantDates {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-height: 210px;
+  }
+
+  .yup {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .sigh {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .devoContainer {
+    grid-row: 1;
+  }
+
+  .newsButton {
+    grid-column: 1/2;
+    max-width: 100px;
+    max-height: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Assignment</title>
+    <link href="to-do.css" rel="stylesheet">
+</head>
+<body>
+    <h2>To Do List</h2>
+
+<ul id="toDo">
+
+</ul>
+    <div class="sort">
+        <span class="pendStyle"><span id="pendingTasks"></span> tasks left</span>
+        <button id="all">All</button>
+        <button id="active">Active</button>
+        <button id="checked">Completed</button>
+    </div>
+<div id="addItem" class="header">
+  <input type="text" id="input" placeholder="New Task...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+    <script src="to-do.js"></script>
+</body>
+</html>

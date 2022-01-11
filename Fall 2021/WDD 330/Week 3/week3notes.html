@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Notes</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Week 3 Notes</h1>
+    <a href="events.html">Practice Exercises</a>
+    <h3>Questions:</h3>
+    <p>When is the best time to use an arrow function? I'm having a hard time determining when to use it.</p>
+    <h3>Notes:</h3>
+    <ul>
+        <li>Objects: Represent entities in the real world (users, orders, etc.)</li>
+        <li>User actions (login, shopping cart) are represented by functions in properties in JavaScript</li>
+        <li>Method: Functions that are stored in object properties</li>
+        <ol>
+            <li>Methods are simplified, a form of shorthand for functions</li>
+        </ol>
+        <li>this.: refers to the 'owner' of the method</li>
+        <ol>
+        <li>Arrow functions don't have a this. When used in the arrow funnction it is taken from outside</li>
+        <li>Value changes depending on how a function is called</li>
+        </ol>
+        <li>Object: self-contained set of related values and functions</li>
+        <li>If a property’s value is a function, it is known as amethod</li>
+        <li>Object Literal: object that is created directly in the language by wrapping all its properties and methods in curly braces</li>
+        <ol>
+            <li>can be passed as a parameter to a function</li>
+        </ol>
+        <li>Properties of an object can be accessed using the dot notation</li>
+        <li>Can also be accessed using bracket notation. Only way to access nonstandard property and method names</li>
+        <li>Computed Properties: code can be placed inside square brackets and the property key will be the return value of that code</li>
+        <li>Call a method using dot or bracket notation. Same as invoking a function (needs parentheses)</li>
+        <li>in: Can be used to check wether an object has a certain property</li>
+        <li>hasOwnProperty(): Can be used to check whether an object has a property that is its own, rather than one that has been inherited from another object</li>
+        <li>for in: loop through all of an object’s properties and methods</li>
+        <li>Object.keys(): Will return an array of all the keys of any object that is provided as an argument</li>
+        <li>bject.entries(): Returns an array of key-value pairs</li>
+        <li>Adding Properties: Assigning a value to the new property</li>
+        <li>Nested Objects: Object that contains other objects</li>
+        <li>This: Refers to the object that it is in</li>
+        <li>object literal pattern: Creates a namespace for groups of related functions</li>
+        <li>JSON is a portable data format that uses JavaScript object literals to exchange information</li>
+        <li>Javascript has many built in math methods</li>
+        <li>Date object: Contains information about dates and times</li>
+        <li>Getter Method: return information about the date object</li>
+        <li>Setter Method: used to change the value of the date held in a Date object</li>
+        <li>The Regex object can be used to create regular expressions.</li>
+        <li>DOM: (Document Object Model) represents an HTML document as a network of connected nodes</li>
+        <ol>
+            <li>The HTML tag is the root node. All the other parts of the document are child nodes</li>
+            <li>DOM can be used in any programming language</li>
+            <li>Document.body: returns the body element of a web page</li>
+            <li>Document.images: returns a node list of all the images contained in the document</li>
+            <li>Document.links: returns a node list of all the a elements and area elements that have an href attribute</li>
+            <li>Document.anchors: returns a node list of all the a elements that have a name attribute</li>
+            <li>Document.forms: returns a node list of all the forms in the document</li>
+            <li>document.querySelector(): allows you to use CSS notation to find the first element in the document that matches a CSS selector provided as an argument</li>
+            <li>document.querySelectorAll(): uses CSS notation but returns a node list ofallthe elements in the document that match the CSS query selector</li>
+            <li>childNodes: list of all the nodes that are children of the node</li>
+            <li>children: only returns any element nodes that are children of that node, so will ignore any text nodes</li>
+            <li>parentNode: returns the parent node of an element</li>
+            <li>nextSibling: returns the next adjacent node of the same parent</li>
+            <li>previousSibling: returns the previous adjacent node</li>
+            <li>getAttribute(): returns the value of the attribute provided as an argument</li>
+            <li>setAttribute: change sthe value of an element’s attributes. Using two arguments: the attribute that you wish to change, and the new value of that attribute</li>
+            <li>className: allows the class of an element to be set directly</li>
+            <li>classList: list of all the classes an element has</li>
+            <li>add: adds a class to an element without overwriting any classes that already exist</li>
+            <li>remove: removes a specific class from an element</li>
+            <li>toggle: adds a class if an element doesn’t have it already, and remove the class if it does have it</li>
+            <li>contains: checks to see if an element has a particular class</li>
+            <li>createElement(): takes a tag name as a parameter and returns that element</li>
+            <li>document.createTextNode(): creates a text node using a parameter</li>
+            <li>appendChild(): adds another node (given as an argument) as a child node</li>
+            <li>nsertBefore(): places a new element before another element</li>
+            <li>removeChild(): used to remove an element from a page</li>
+            <li>replaceChild(): used to replace one node with another</li>
+            <li>innerHTML: returns all the child elements of an element as a string of HTML</li>
+        </ol>
+        <li>Event Listens: Trigger during a specified event</li>
+        <li>Whenever an event handler is triggered by an event, the callback function is called. This function is automatically passed an event object as a parameter that contains information about the event.</li>
+        <li>Type: returns the type of event that occured (click, etc.)</li>
+        <li>screenX and screenY: show the number of pixels from the left and top of the screen where the event took place</li>
+        <li>clientX and clientY: show the number of pixels from the left and top of the client that is being used (browser window)</li>
+        <li>pageX and pageY: show the number of pixels from the left and top where the event took place in the document</li>
+        <li>removeEventListener(): method that removes an event listener</li>
+        <li>preventDefault(): method that stops the default behavior</li>
+        <li>Event propagation: order that the events fire on each element</li>
+        <li>Bubbling: When event fires then bubbles up the document tree</li>
+        <li>Capturing: starts on the root element then propagates downwards</li>
+        <li>event.stopPropagation(): stops bubbling</li>
+    </ul>
+</body>
+</html>
