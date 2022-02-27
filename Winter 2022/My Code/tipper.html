@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipper - Tip Calculator</title>
+    <link rel="stylesheet" href="tipper.css">
+    <script src="tipper.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tipper</h1>
+        <form>
+            <div class="group">
+            <label>Meal Cost</label> <br> <input id="cost-input" type="text" placeholder="Cost"><br>
+            </div>
+
+            <div class="group">
+            <label>Service Quality</label> <br> 
+            <select id="service">
+                <option value="0">Select One</option>
+                <option value="0.25">25% Imaculate</option>
+                <option value="0.2">20% Excellent</option>
+                <option value="0.15">15% Good</option>
+                <option value="0.1">10% Alright</option>
+            </select>
+            </div>
+            <button onclick="tipCalc()">Calculate!</button>
+        </form>
+         <div class="group"><sup>$</sup><span id="tip">0.00</span></div>
+    </div>
+</body>
+</html>
