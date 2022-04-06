@@ -1,0 +1,18 @@
+@use 'variables'as *;
+@use 'utilities';
+
+h1 {
+    font-family: "Old Standard TT", serif;
+    font-size: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portrait {
+    width: 35vw;
+}
+
+.landscape {
+    width: 50vw;
+}

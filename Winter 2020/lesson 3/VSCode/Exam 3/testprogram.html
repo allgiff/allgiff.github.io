@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <script>
+        /* Defining Table
+         * Input: 
+         * Processing: 
+         * Output: 
+         * Author: Allie Gifford
+         */
+        function myprogram() {
+            //program 1 call
+            var fn = makeFullName("Donald", "Trump");
+            //program 2 call
+            //let dep = depreciation(28000, 26200, 12);
+            //program 3 call
+            //let list = [5, -2.1, 6.3, 9,  5, 13];
+            //let last = getLast(list);
+            //program 4 call
+            var list = [70, 950, 671, 6];
+            var score = averageBig(list);
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDiv').innerHTML = score;
+
+        }
+        function makeFullName(givenName, familyName){
+            
+            let fullname = familyName + ", " + givenName;
+            //return the full name
+            return fullname;
+
+        }
+        //a function for calculating depreciation value. 
+        function depreciation (startvalue, endvalue, months) {
+           //set parameters to a variable
+           let s = startvalue;
+           let e = endvalue; 
+           let m = months; 
+
+            //use above variables to calculate the monthly depretiation value.
+           let d = (s - e) / m;
+            //return the value of d
+            d = Math.round(d * 100) / 100; 
+            return d; 
+
+        }
+        function getLast(list) {
+            //find the last element of the list and its value.
+            let last = list[list.length - 1];
+            //return the value of the last element
+            return last;
+
+        }
+        function averageBig(list) {
+           let sum = 0;
+           let average = 0;
+           let newArray = [];
+            for (let i = 0; i < list.length; i++) {
+                if (list[i] > 1000) {
+                    newArray[i] = list[i];
+                    sum += newArray[i]
+                    average = sum / (newArray.length / 2);
+                    average = Math.round(average * 100) / 100;
+                    
+                }
+            }
+            return average;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="myprogram()">Run Program</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

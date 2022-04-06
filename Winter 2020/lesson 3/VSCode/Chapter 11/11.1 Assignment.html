@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 11.1</title>
+    <script>
+        /* Defining Table
+         * Input: Get a date from the user (YYYY/MM/DD)
+         * Processing: Create a date object to find the day of the week of a given day. Create an array that holds the days of the week
+         * Output: The name of the day of the week for the entered date. 
+         * Author: Allie Gifford
+         * Done in class
+         */
+        function findWeekDay() {
+            // Get data from the html imput text field
+            let givenDate = document.getElementById('txtDate').value;
+
+            //The different days of the week
+            daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            //create a date object and find the day of the week the date was on
+            let dateObj = new Date(givenDate);
+            let findDay = dateObj.getDay(); 
+            let dayOfWeek = daysOfTheWeek[findDay]
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDiv').innerHTML = dayOfWeek;
+
+        }
+    </script>
+</head>
+
+<body>
+    Enter a date (YYYY/MM/DD): <input type="text" id="txtDate">
+    <button type="button" onclick="findWeekDay()">Run Program</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

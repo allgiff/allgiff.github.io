@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Notes</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Week 7 Notes</h1>
+    <h3>Practice</h3>
+    <a href="https://eloquentjavascript.net/05_higher_order.html">Studied this resource to learn more</a> <br>
+    <a href="https://www.w3schools.com/js/js_ajax_examples.asp">Studied this Resource</a>
+    <p>Did Code Academy Exercises</p>
+    <h3>Questions</h3>
+    <p>Why do first class objects matter? I don't remember ever hearing about them before this, and I took an entire class about javascript.</p>
+    <ul>
+        <li>Functions are: First-Class Objects: can be passed around in the same way as every other value.</li>
+        <li>Call Method: Used to set the value of thos inside a function to an object provided as the first argument</li>
+        <li>Description Property: Can be used to describe what a function does</li>
+        <li>Memoization: The result of a function can be stored in the cache so that it does not have to loop through many times</li>
+        <li>Immediately Invoked Function Expression: An anonymous function that is invoked as soon as it’s defined.</li>
+        <ul>
+            <li>Temp: Temporary variable that only exists while an IIFE is invoked</li>
+            <li>Initialization Code: A form of IIFE that initalizes code</li>
+            <li>Use Strict: Enforces strickt mode on the javascript to avoid sloppy coding practices</li>
+            <li>IIFE can be used to enclose a block of code inside its own private scope so it doesn’t interfere with any other part of the program (can be added or removed seperatly)</li>
+        </ul>
+        <li>Self-defining functions: Done by assigning an anonymous function to a variable that has the same name as the function</li>
+        <li>Init-time branching: enables the functions to work more effectively in the browser, and avoid checking for features every time they’re invoked</li>
+        <li>Recursive function: invokes itself until a certain condition is met</li>
+        <li>Asynchronous Programming: code that runs out of order due to the use of callbacks</li>
+        <li>Promise: represents the future result of an asynchronous operation</li>
+        <ul>
+            <li>When a promise is created it is pending. Once an opperation is completed it is settled & can result in 2 different outcomes</li>
+            <ul>
+                <li>Resolved ― the asynchronous operation was completed successfully</li>
+                <li>Rejected ― the asynchronous operation didn’t work as expected, wasn't successfully completed or resulted in an error</li>
+            </ul>
+            <li>Creating a promise: Created using a constructor function</li>
+            <ul>
+                <li>takes an executor as an argument, which initalizes and starts the opperation</li>
+                <li>Accepts two functions as arguments:</li>
+                <ul>
+                    <li>resolve(): called if opperation is successful</li>
+                    <li>reject(): called if opperation fails</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>Closures: Powerful javascript feature</li>
+        <li>Generator: special functions used to produce iterators that maintain the state of a value</li>
+        <li>Pure Functions: return value only depends on given arguments, no side effects, will always return the same result when the same arguments are given</li>
+        <li>Higher-order functions: accept another function as an argument, or return another function as a result, or both</li>
+        <li>Currying: process that involves the partial application of functions</li>
+        <li>Ajax: technique that allows web pages to communicate asynchronously with a server. (updates pages without reloading, like a live server)</li>
+        <li>Clients and servers: A client will request a resource and the server sends back a response</li>
+        <li>fetch(): returns a promise that resolves to the reponse returned from the URL</li>
+        <li>response interface: deals with the object returned when the promise is fulfilled</li>
+        <li>redirect(): used to redirect to another URL, and creates a new promise</li>
+        <li>text(): reads text from a response and returns a promise that can be treated as a string</li>
+        <li>blob(): used to read raw data and returns a promise that resolves with a blob object</li>
+        <li>Request objects: created using the request constructor, and gives control over the request</li>
+        <li>headers: used to pass additional information about a request or response</li>
+        <li>Ajax can also be used to send information, usually as a JSON string</li>
+        <li>Ajax is still subject to change because it is a 'living standard'</li>
+    </ul>
+</body>
+</html>

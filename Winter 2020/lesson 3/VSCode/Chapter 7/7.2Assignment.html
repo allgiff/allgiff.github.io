@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Holiday Alarm</title>
+    <script>
+        /* Defining Table
+         * Input: Day of week and what month, grabed from computer clock. 
+         * Processing: 
+         * Output: Say "Get Up" on any weekday that is not a holiday. "Sleep in" in holidays.
+         * Author: Allie Gifford
+         */
+        function agressiveAlarm() {
+            // Get data from the computer's clock
+            let now = new Date();
+            let month = now.getMonth();
+            let dayOfMonth = now.getDate();
+            let dayOfWeek = now.getDay();
+            // Tell user to get up, or sleep in
+            let message = "";
+
+            if (month == 11 && dayOfMonth == 25 || month == 6 && dayOfMonth == 4 || month == 0 && dayOfMonth == 1) {
+                message = "Sleep in!";
+            }
+            else if (dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) {
+                message = "Get Up!";
+            }
+            else {
+                message = "Sleep in!";
+            }
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDiv').innerHTML = message;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Can I Sleep in? </h3>
+    <button type="button" onclick="agressiveAlarm()">Run Program</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

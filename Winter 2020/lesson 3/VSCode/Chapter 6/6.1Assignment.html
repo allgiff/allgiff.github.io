@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Which Shoes?</title>
+<script>
+/* Defining Table
+ * Input: The weather. (rain, snow, sun)
+ * Processing: matching shoes to weather
+ * Output: Type of shoes for the weather (shoes, sandals, galoshes)
+ * Author: Allie Gifford
+ */
+function findShoes() {
+    // Get data from the html imput text field
+    let weather = document.getElementById('txtWeather').value;
+    let shoes = "";
+    
+    if (weather == "rain") {
+        shoes ="rainboots";
+    }
+    else if (weather == "snow") {
+        shoes ="boots";
+    }
+    else if (weather == "hot") {
+        shoes ="sandals";
+    }
+    else {
+        shoes ="shoes";
+    }
+
+   // Display output in the div with the id "outputDiv"
+    document.getElementById('outputDiv').innerHTML = shoes;
+
+}
+</script>
+</head>
+<body>
+    <h3>Shoe Picker</h3>
+    What's the weather today? <input type="text" id="txtWeather">    
+    <button type="button" onclick="findShoes()">Find Shoes</button>
+    <div id="outputDiv"></div>
+</body>
+</html>

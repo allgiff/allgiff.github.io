@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exam 2 Q.2</title>
+    <script>
+        /* Defining Table
+         * Input: 3 integers from user: start, end, and divisor. 
+         * Processing: Find all numbers between the start and end number. Find out if they are evenly divisible by the divisor.
+         * Output: Every number between the start and end numbers that is evenly divisible by the divisor. Must be seperated by spaces.
+         * Author: Allie Gifford
+         */
+        function integerDivisor() {
+            // Get data from the html imput text field
+            let startNum = parseInt(document.getElementById('start').value);
+            let endNum = parseInt(document.getElementById('end').value);
+            let divisor = parseInt(document.getElementById('divisor').value);
+            let output = "";
+
+            for (let i = startNum; i <= endNum; i++) {
+                if (i % divisor == 0) {
+                    output = output + i + " ";
+                }
+
+            }
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDiv').innerHTML = output;
+
+        }
+    </script>
+</head>
+
+<body>
+    Start: <input type="text" id="start" size="5"><br>
+    End: <input type="text" id="end" size="5"><br>
+    Divisor: <input type="text" id="divisor" size="5"><br>
+    <button type="button" onclick="integerDivisor()">Run Program</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

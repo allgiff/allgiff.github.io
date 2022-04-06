@@ -1,0 +1,51 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap');
+        html {
+            margin: 0 auto;
+            background-color: powderblue;
+            padding-bottom: 40px;
+        }
+        body {
+            background-color: antiquewhite;
+            width: 950px;
+            margin: 0 auto;
+            height: 100%;
+            border-radius: 3%;
+        }
+        h1 { font-family: 'Source Serif Pro', serif;
+            padding: 10px;
+            padding-bottom: 0px;
+            text-align: center;
+
+        }
+        h2, h3 {
+            font-family: 'Source Serif Pro', serif;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 10px;
+            padding-top: 0px;
+        }
+        li {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 10px;
+            padding-top: 0px;
+        }
+        a {
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 0px 0px 20px 20px;
+        }
+        a:link {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: powderblue;
+        }
+        @media screen and (min-width: 1000px) {
+            
+        }

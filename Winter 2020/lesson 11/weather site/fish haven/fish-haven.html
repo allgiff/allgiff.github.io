@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="fish-haven.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/weather_favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img id="sky-logo" src="images/sun-logo-transparent.png" alt="Logo for Sky Forcaster">
+        <div class="headings">
+            <h1>Sky Forecaster</h1>
+            <div class="m">Be in the know. Be in the outside.</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2011/weather%20site/home%20page/index.html">Home</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2011/weather%20site/preston%2010/preston%2010.html">Preston</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2011/weather%20site/soda%20springs/soda-springs.html">Soda Springs</a></li>
+            <li class="currentpage"><a href="https://allgiff.github.io/lesson%2011/weather%20site/fish%20haven/fish-haven.html">Fish Haven</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2011/weather%20site/storm%20center/storm-center.html">Storm Center</a></li>
+            <li><a href="https://allgiff.github.io/lesson%2011/weather%20site/gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h1><strong>Fish Haven</strong></h1>
+            <picture class="banner">
+                <source media="(max-width: 400px)" srcset="images/lake-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/lake-medium.jpg">
+                <img class="contentbox" id="hero" src="images/lake.jpg" alt="Idaho landscape">
+            </picture>
+
+            <section class="contentbox" id="summary">
+                <h4>Weather Summary</h4> <br>
+                <p><strong>Currently:</strong> <span id="condition"></span></p>
+                <p><strong>High:</strong> <span id="temp"></span>°F</p>
+                <p><strong>Wind Chill:</strong> <span id="wind-chill"></span>°F</p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span id="speed"></span> mph</p>
+            </section>
+
+            <section class="forc">
+                <div>
+                    <h2>5 Day Forecast</h2>
+                    <ul class="fiveForc">
+                      <li class='fiveDays'><h3></h3><img src="#" alt=""><p></p></li>
+                      <li class='fiveDays'><h3></h3><img src="#" alt=""><p></p></li>
+                      <li class='fiveDays'><h3></h3><img src="#" alt=""><p></p></li>
+                      <li class='fiveDays'><h3></h3><img src="#" alt=""><p></p></li>
+                      <li class='fiveDays'><h3></h3><img src="#" alt=""><p></p></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contentbox">
+                <div class="card1"></div>
+            </section>
+
+            <section class="contentbox">
+                <h2>Bear Lake</h2>
+                <img id="article-img" src="images/article-img.jpg" alt="river landscape">
+                <p>Head out to Fish Haven and get into nature! Fish Haven has many beautiful hikes, and sits on the shores of Bear Lake. Rent a lodge on the lake shore and enjoy the vacation!<br><br>
+
+                   Fish Haven has many options for an adventurous vacation. There are beautiful hikes, lovely hotels, and a lake to relax next to. 
+                   Bear lake is a main attraction for the town, and brings in many visitors looking for a relaxing stay.<br><br>
+
+                    But, travelers beware. Within the lake lurks a beast, a sea monster. There is not a lot of information about the creature. It is rather elusive and sightings are rare.
+                    It was described as a serpent-like creature, similar to the monster of Flathead lake. Many think it to be peaceful, while others are convinced that it is dangerous. 
+                    Travelers beware, if you come across the creature, you will never wish to return.<br><br>
+
+                    Bear lake is a beautiful place, with many options for hotels. Have fun relaxing on the shore, and enjoy your stay!
+                For more tourist information, such as lodge options, visit the Bear Lake website.</p>
+            </section>
+
+            <section class="contentbox">
+                <div class="contact">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <p> &#9743; (123) 456-7890 </p>
+                        <p>&#9993; skyforcaster@gmail.com</p>
+                        <img src="images/facebook-logo.png" alt="facebook-logo">
+                        <img src="images/pinterest-logo.png" alt="pinterest-logo">
+                        <img src="images/instagram-logo.png" alt="instagram-logo">
+                    </div>
+                    <img id="map-img" src="images/map.png" alt="a map of southern idaho">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="legal"> &copy; <span id="copyrightyear"></span>Sky Forcaster | weather information from <a
+                href="https://openweathermap.org/">Open Weather Map</a> | Allie Gifford</p>
+        <p id="date"></p>
+    </footer>
+
+    <script src="fish-haven.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Quicksand'
+                ]
+            }
+        });
+    </script>
+
+</body>
+<!-- (╭ರ_•́) -->
+</html>

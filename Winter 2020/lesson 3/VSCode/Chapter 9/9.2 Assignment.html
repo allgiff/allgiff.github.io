@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>9.2 Assignment</title>
+    <script>
+        /* Defining Table
+         * Input: Get investment information from user with the doFV function. 
+         * Processing: Use computeFutureValue function to compute and return future value of an investment. 
+         * Output: Display future investment value to user using doFV function. 
+         * Author: Allie Gifford
+         */
+        function doFV() {
+            // Get data from the html imput text field
+            let amntInvst = parseFloat(document.getElementById('amntInvstTxt').value);
+            let annRate = parseFloat(document.getElementById('annRateTxt').value);
+            let numYrs = parseFloat(document.getElementById('numYrsTxt').value);
+            let periodsPerYear = parseFloat(document.getElementById('periodsPerYrTxt').value);
+
+            //call compute future value function 
+            let call = computeFutureValue(amntInvst, annRate, numYrs, periodsPerYear);
+
+            // Display output in the div with the id "outputDiv"
+            document.getElementById('outputDiv').innerHTML = call;
+
+        }
+        function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+
+            //calculate the future value of investments using the given formula
+            let a = principal;
+            let r = annualRate / periodsPerYear;
+            let n = years * periodsPerYear;
+            let f = a * Math.pow(1 + r, (n));
+            //round f. 
+            f = Math.round(f * 100) / 100;
+            //return f to the call for output.
+            return f;
+
+        }
+    </script>
+</head>
+
+<body>
+    Amount invested (principal): <input type="text" id="amntInvstTxt"> <br>
+    Annual rate (example: .08): <input type="text" id="annRateTxt"> <br>
+    Number of years: <input type="text" id="numYrsTxt"> <br>
+    Periods per year: <input type="text" id="periodsPerYrTxt"> <br>
+    <button type="button" onclick="doFV()">Compute Future Value</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>
